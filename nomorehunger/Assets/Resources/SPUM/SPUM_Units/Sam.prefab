@@ -2244,7 +2244,7 @@ GameObject:
   - component: {fileID: 7207454809324275284}
   - component: {fileID: 5632808025919410597}
   m_Layer: 5
-  m_Name: Unit000
+  m_Name: Sam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2285,7 +2285,7 @@ MonoBehaviour:
   _version: 164
   _spriteOBj: {fileID: 2124589465313881983}
   EditChk: 0
-  _code: Unit000
+  _code: sam
   _anim: {fileID: 5671386878437190575}
   _horse: 0
   _horseString: 
