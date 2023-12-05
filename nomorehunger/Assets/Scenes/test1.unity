@@ -233,7 +233,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3006198869070594036, guid: e23b07e0673ff6d45846e93b70b85634, type: 3}
       propertyPath: m_Name
-      value: rooooo
+      value: player
       objectReference: {fileID: 0}
     - target: {fileID: 8279666678355154237, guid: e23b07e0673ff6d45846e93b70b85634, type: 3}
       propertyPath: m_SortingOrder
@@ -250,6 +250,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1585248415}
   m_SourcePrefab: {fileID: 100100000, guid: e23b07e0673ff6d45846e93b70b85634, type: 3}
+--- !u!4 &685088066 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8427014953237929383, guid: e23b07e0673ff6d45846e93b70b85634, type: 3}
+  m_PrefabInstance: {fileID: 665750871}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &724417259
 GameObject:
   m_ObjectHideFlags: 0
@@ -45180,6 +45185,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1613533791}
   - component: {fileID: 1613533790}
+  - component: {fileID: 1613533792}
+  - component: {fileID: 1613533793}
   m_Layer: 0
   m_Name: Enemy_011_C_0
   m_TagString: Untagged
@@ -45227,7 +45234,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: 1463772004, guid: cedcf7a0be03aad469ee7fcd67667c46, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -45254,6 +45261,47 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1613533792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613533789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ddec97c84197044a8a984cc59318d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  Player: {fileID: 685088066}
+--- !u!50 &1613533793
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613533789}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
