@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         transform.Translate(movement.normalized * Time.deltaTime * speed);
 
         //animation part
-       /* if (movementX != 0 || movementY != 0)
+        if (movementX != 0 || movementY != 0)
         {
             animator.SetFloat("RunState", 0.5f);
         }
@@ -51,6 +51,6 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Z))
         {
             animator.SetTrigger("Attack");
-        }*/
+        }
     }
 }
