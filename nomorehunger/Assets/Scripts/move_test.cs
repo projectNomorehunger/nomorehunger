@@ -26,6 +26,7 @@ public class move_test : MonoBehaviour
         Vector3 moveVector = new Vector3(moveX, moveY, 0f);
 
         transform.Translate(moveVector.normalized * Time.deltaTime * 5f);
+       
 
         if (moveX != 0 || moveY != 0)
         {
