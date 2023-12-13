@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using TMPro;
 
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    public TextMeshProUGUI ui;
+
     private Rigidbody2D rb;
     private Animator animator;
 
