@@ -431,7 +431,7 @@ GameObject:
   - component: {fileID: 618498902}
   - component: {fileID: 618498901}
   m_Layer: 5
-  m_Name: UserInterface
+  m_Name: Hitpoints
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
