@@ -32,11 +32,12 @@ public class PlayerController : MonoBehaviour
         movementY = movementVector.y;  
     }
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         /* movement part */
         Vector3 movement = new Vector3(movementX, movementY, 0.0f);
-        transform.Translate(movement.normalized * Time.deltaTime * speed);
+        /*transform.Translate(movement.normalized * Time.deltaTime * speed);*/
+        rb.MovePosition(transform.position + movement.normalized * Time.deltaTime * speed);
 
         //animation part
         if (movementX != 0 || movementY != 0)
@@ -48,9 +49,19 @@ public class PlayerController : MonoBehaviour
             animator.SetFloat("RunState", 0);
         }
 
+        /*if (Input.GetKeyDown(KeyCode.Z))
+        {
+            animator.SetTrigger("Attack");
+        }*/
+    }
+
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.Z))
         {
             animator.SetTrigger("Attack");
         }
+
+        Debug.Log(rb.position);
     }
 }
