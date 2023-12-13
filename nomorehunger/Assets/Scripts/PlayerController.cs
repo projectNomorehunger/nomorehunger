@@ -32,7 +32,8 @@ public class PlayerController : MonoBehaviour
         Vector2 movementVector = movementValue.Get<Vector2>(); 
 
         movementX = movementVector.x;
-        movementY = movementVector.y;  
+        movementY = movementVector.y;
+        Debug.Log(movementValue.ToString());
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
         Vector3 movement = new Vector3(movementX, movementY, 0.0f);
         /*transform.Translate(movement.normalized * Time.deltaTime * speed);*/
         rb.MovePosition(transform.position + movement.normalized * Time.deltaTime * speed);
-
+        
         //animation part
         if (movementX != 0 || movementY != 0)
         {
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("RunState", 0);
         }
-
+        Debug.Log("Test");
         /*if (Input.GetKeyDown(KeyCode.Z))
         {
             animator.SetTrigger("Attack");
