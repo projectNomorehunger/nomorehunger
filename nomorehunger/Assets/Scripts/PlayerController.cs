@@ -17,6 +17,9 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     private Vector3 scale;
     
+    public GameObject Melee;
+    
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -26,14 +29,15 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         scale = transform.localScale;
+
         speed = 5;
     }
     void OnMove(InputValue movementValue)
     {
-        Vector2 movementVector = movementValue.Get<Vector2>(); 
+        Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
-        movementY = movementVector.y;  
+        movementY = movementVector.y;
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -58,13 +62,19 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger("Attack");
         }*/
+
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            
             animator.SetTrigger("Attack");
+            Melee.SetActive(true);
+            
         }
 
         //make sprite look left/right
@@ -72,5 +82,10 @@ public class PlayerController : MonoBehaviour
         else if (movementX < 0) transform.localScale = new Vector3(scale.x, scale.y, scale.z);
 
         Debug.Log(rb.position);
+
+       
     }
+   
 }
+
+
