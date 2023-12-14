@@ -16,7 +16,9 @@ public class PlayerController : MonoBehaviour
     private float movementX;
     private float movementY;
     public GameObject Melee;
-    
+    bool isAttacking = false;
+    float atkDuration = 0.07f;
+    float atkTimer = 0f;
 
     private void Awake()
     {
@@ -64,18 +66,41 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-
+        CheckMeleeTimer();
         if (Input.GetKeyDown(KeyCode.E))
         {
             
+            Onattack();
             animator.SetTrigger("Attack");
-            Melee.SetActive(true);
+            
             
         }
 
         Debug.Log(rb.position);
 
        
+    }
+   
+    void Onattack()
+    {
+        if (!isAttacking)
+        {
+            Melee.SetActive(true);
+            isAttacking = true;
+        }
+    }
+    void CheckMeleeTimer()
+    {
+        if (isAttacking)
+        {
+            atkTimer += Time.deltaTime;
+            if(atkTimer >= atkDuration)
+            {
+                atkTimer = 0;
+                isAttacking= false;
+                Melee.SetActive(false);
+            }
+        }
     }
    
 }

@@ -9,7 +9,7 @@ public class Enemy : MonoBehaviour
 
     public float speed = 0.5f;
     public Transform Player;
-    float health, MaxHealth = 10f;
+    float health, MaxHealth = 6f;
 
     // Use this for initialization
     void Start()
