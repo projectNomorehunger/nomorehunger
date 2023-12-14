@@ -15,7 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private float movementX;
     private float movementY;
-
+    private Vector3 scale;
+    
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+        scale = transform.localScale;
         speed = 5;
     }
     void OnMove(InputValue movementValue)
@@ -42,6 +43,7 @@ public class PlayerController : MonoBehaviour
         /*transform.Translate(movement.normalized * Time.deltaTime * speed);*/
         rb.MovePosition(transform.position + movement.normalized * Time.deltaTime * speed);
 
+        
         //animation part
         if (movementX != 0 || movementY != 0)
         {
@@ -64,6 +66,10 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger("Attack");
         }
+
+        //make sprite look left/right
+        if (movementX > 0) transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
+        else if (movementX < 0) transform.localScale = new Vector3(scale.x, scale.y, scale.z);
 
         Debug.Log(rb.position);
     }
