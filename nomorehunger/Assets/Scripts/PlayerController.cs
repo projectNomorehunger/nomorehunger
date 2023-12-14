@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
 
     private float movementX;
     private float movementY;
+    public GameObject Melee;
+    
 
     private void Awake()
     {
@@ -24,15 +26,15 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        
+
         speed = 5;
     }
     void OnMove(InputValue movementValue)
     {
-        Vector2 movementVector = movementValue.Get<Vector2>(); 
+        Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
-        movementY = movementVector.y;  
+        movementY = movementVector.y;
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -56,15 +58,26 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetTrigger("Attack");
         }*/
+
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+
+
+        if (Input.GetKeyDown(KeyCode.E))
         {
+            
             animator.SetTrigger("Attack");
+            Melee.SetActive(true);
+            
         }
 
         Debug.Log(rb.position);
+
+       
     }
+   
 }
+
+

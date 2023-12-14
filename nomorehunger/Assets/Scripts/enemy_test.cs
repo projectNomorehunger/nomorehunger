@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,11 +9,12 @@ public class Enemy : MonoBehaviour
 
     public float speed = 0.5f;
     public Transform Player;
+    float health, MaxHealth = 10f;
 
     // Use this for initialization
     void Start()
     {
-
+        health = MaxHealth;
     }
 
     // Update is called once per frame
@@ -27,5 +29,16 @@ public class Enemy : MonoBehaviour
         }
 
     }
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0){
+            Destroy(gameObject);
+        }
+        Debug.Log(health);
+
+    }     
+        
+    
 
 }
