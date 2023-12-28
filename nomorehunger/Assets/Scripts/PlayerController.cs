@@ -15,7 +15,10 @@ public class PlayerController : MonoBehaviour
 
     private float movementX;
     private float movementY;
-
+    private GameObject attackArea = default;
+    private bool attacking =false;
+    private float timeToAttack =0.25f;
+    private float timer= 0f;
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -26,6 +29,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         
         speed = 5;
+
+        attackArea = tranform.Getchiled(0).gameObject;
     }
     void OnMove(InputValue movementValue)
     {
@@ -63,9 +68,22 @@ public class PlayerController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
+            Attack();
             animator.SetTrigger("Attack");
         }
+        if (attacking){
+            timer += Time.deltaTime;
+            if(timer >= timeToAttack){
+                timer=0;
+                attacking = false;
+                attackArea.SetActive(attacking);
+            }
+        }
+        
+    }
 
-        Debug.Log(rb.position);
+    private void Attack(){
+        attacking = true;
+        attackArea.SetActive(attacking);
     }
 }
