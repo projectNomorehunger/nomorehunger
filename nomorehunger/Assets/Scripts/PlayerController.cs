@@ -84,11 +84,16 @@ public class PlayerController : MonoBehaviour
         if (movementX > 0) transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
         else if (movementX < 0) transform.localScale = new Vector3(scale.x, scale.y, scale.z);
 
-        Debug.Log(rb.position);
+        /*Debug.Log(rb.position);*/
 
        
     }
-   
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        /*Debug.Log("Trigger!");*/
+    }
+
     void Onattack()
     {
         if (!isAttacking)
@@ -112,5 +117,7 @@ public class PlayerController : MonoBehaviour
     }
    
 }
+
+
 
 
