@@ -15,14 +15,11 @@ public class PlayerController : MonoBehaviour
 
     private float movementX;
     private float movementY;
-    public GameObject Melee;
-    bool isAttacking = false;
-    float atkDuration = 0.07f;
-    float atkTimer = 0f;
-
+    
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -30,6 +27,8 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         speed = 5;
+
+        
     }
     void OnMove(InputValue movementValue)
     {
@@ -37,6 +36,7 @@ public class PlayerController : MonoBehaviour
 
         movementX = movementVector.x;
         movementY = movementVector.y;
+        Debug.Log(movementValue.ToString());
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -55,54 +55,25 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("RunState", 0);
         }
-
+        Debug.Log("Test");
         /*if (Input.GetKeyDown(KeyCode.Z))
         {
             animator.SetTrigger("Attack");
         }*/
-
     }
 
     void Update()
     {
-
-        CheckMeleeTimer();
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             
-            Onattack();
             animator.SetTrigger("Attack");
-            
-            
         }
+        
 
-        Debug.Log(rb.position);
+    }
 
-       
-    }
-   
-    void Onattack()
-    {
-        if (!isAttacking)
-        {
-            Melee.SetActive(true);
-            isAttacking = true;
-        }
-    }
-    void CheckMeleeTimer()
-    {
-        if (isAttacking)
-        {
-            atkTimer += Time.deltaTime;
-            if(atkTimer >= atkDuration)
-            {
-                atkTimer = 0;
-                isAttacking= false;
-                Melee.SetActive(false);
-            }
-        }
-    }
-   
+    
 }
 
 
