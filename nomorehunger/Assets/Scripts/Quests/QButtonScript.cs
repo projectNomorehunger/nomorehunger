@@ -9,11 +9,11 @@ public class QButtonScript : MonoBehaviour
     public int questID;
     public TextMeshProUGUI questTitle;
 
-    private GameObject acceptButton;
+/*    private GameObject acceptButton;
     private GameObject giveUpButton;
-    private GameObject completeButton;
+    private GameObject completeButton;*/
 
-    private QButtonScript acceptButtonScript;
+ /*   private QButtonScript acceptButtonScript;
     private QButtonScript giveUpButtonScript;
     private QButtonScript completeButtonScript;
 
@@ -31,7 +31,7 @@ public class QButtonScript : MonoBehaviour
         acceptButton.SetActive(false);
         giveUpButton.SetActive(false); 
         completeButton.SetActive(false);
-    }
+    }*/
 
     //SHOW ALL INFOS
     public void ShowAllInfos()
@@ -40,32 +40,32 @@ public class QButtonScript : MonoBehaviour
         //ACCEPT BUTTON
         if(QuestManager.questManager.RequestAvailableQuest(questID)) 
         {
-            acceptButton.SetActive(true);
-            acceptButtonScript.questID = questID;
+           QuestUIManager.uiManager.acceptButton.SetActive(true);
+           QuestUIManager.uiManager.acceptButtonScript.questID = questID;
         }
         else
         {
-            acceptButton.SetActive(false);
+            QuestUIManager.uiManager.acceptButton.SetActive(false);
         }
         //GIVEUP BUTTON
         if (QuestManager.questManager.RequestAcceptedQuest(questID))
         {
-            giveUpButton.SetActive(true);
-            giveUpButtonScript.questID = questID;
+            QuestUIManager.uiManager.giveUpButton.SetActive(true);
+            QuestUIManager.uiManager.giveUpButtonScript.questID = questID;
         }
         else
         {
-            giveUpButton.SetActive(false);
+            QuestUIManager.uiManager.giveUpButton.SetActive(false);
         }
         //COMPLETE BUTTON
         if (QuestManager.questManager.RequestCompleteQuest(questID))
         {
-            completeButton.SetActive(true);
-            completeButtonScript.questID = questID;
+            QuestUIManager.uiManager.completeButton.SetActive(true);
+            QuestUIManager.uiManager.completeButtonScript.questID = questID;
         }
         else
         {
-            completeButton.SetActive(false);
+            QuestUIManager.uiManager.completeButton.SetActive(false);
         }
     }
 
@@ -111,5 +111,8 @@ public class QButtonScript : MonoBehaviour
     public void ClosePanel()
     {
         QuestUIManager.uiManager.HideQuestPanel();
+        QuestUIManager.uiManager.acceptButton.SetActive(false);
+        QuestUIManager.uiManager.giveUpButton.SetActive(false);
+        QuestUIManager.uiManager.completeButton.SetActive(false);
     }
 }

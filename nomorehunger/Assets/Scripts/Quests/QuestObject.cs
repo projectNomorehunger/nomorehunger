@@ -58,9 +58,13 @@ public class QuestObject : MonoBehaviour
     {
         if (inTrigger && Input.GetKeyDown(KeyCode.Space))
         {
-            //quest ui manager
-            QuestUIManager.uiManager.CheckQuests(this);
-            //QuestManager.questManager.QuestRequest(this);
+            if(!QuestUIManager.uiManager.questPanelActive)
+            {
+                //quest ui manager
+                QuestUIManager.uiManager.CheckQuests(this);
+                //QuestManager.questManager.QuestRequest(this);
+            }
+
         }
     }
 

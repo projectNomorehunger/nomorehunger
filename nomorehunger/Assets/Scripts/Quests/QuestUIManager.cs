@@ -11,7 +11,7 @@ public class QuestUIManager : MonoBehaviour
     //BOOLS 
     public bool questAvailable = false;
     public bool questRunning = false;
-    private bool questPanelActive = false;
+    public bool questPanelActive = false;
     private bool questLogPanelActive = false;
 
     //PANELS
@@ -30,9 +30,9 @@ public class QuestUIManager : MonoBehaviour
     public GameObject qLogButton;
     private List<GameObject> qButtons = new List<GameObject>();
 
-    private GameObject acceptButton;
-    private GameObject giveUpButton;
-    private GameObject completeButton;
+    public GameObject acceptButton;
+    public GameObject giveUpButton;
+    public GameObject completeButton;
 
     //SPACER
     public Transform qButtonSpacer1; //qButton available
@@ -48,6 +48,26 @@ public class QuestUIManager : MonoBehaviour
     public TextMeshProUGUI questLogTitle;
     public TextMeshProUGUI questLogDescription;
     public TextMeshProUGUI questLogSummary;
+
+    public QButtonScript acceptButtonScript;
+    public QButtonScript giveUpButtonScript;
+    public QButtonScript completeButtonScript;
+
+    void Start()
+    {
+        acceptButton = GameObject.Find("QuestCanvas").transform.Find("QuestPanel").transform.Find("QuestDescription").transform.Find("GameObject").transform.Find("AcceptButton").gameObject;
+        acceptButtonScript = acceptButton.GetComponent<QButtonScript>();
+
+        giveUpButton = GameObject.Find("QuestCanvas").transform.Find("QuestPanel").transform.Find("QuestDescription").transform.Find("GameObject").transform.Find("GiveUpButton").gameObject;
+        giveUpButtonScript = giveUpButton.GetComponent<QButtonScript>();
+
+        completeButton = GameObject.Find("QuestCanvas").transform.Find("QuestPanel").transform.Find("QuestDescription").transform.Find("GameObject").transform.Find("CompleteButton").gameObject;
+        completeButtonScript = completeButton.GetComponent<QButtonScript>();
+
+        acceptButton.SetActive(false);
+        giveUpButton.SetActive(false);
+        completeButton.SetActive(false);
+    }
 
     private void Awake()
     {
