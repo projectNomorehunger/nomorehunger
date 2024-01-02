@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
 
     private float movementX;
     private float movementY;
+    //from round1
     private Vector3 scale;
     
     public GameObject Melee;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         animator = GetComponent<Animator>();
+        
     }
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,8 @@ public class PlayerController : MonoBehaviour
         scale = transform.localScale;
 
         speed = 5;
+
+        
     }
     void OnMove(InputValue movementValue)
     {
@@ -40,6 +44,7 @@ public class PlayerController : MonoBehaviour
 
         movementX = movementVector.x;
         movementY = movementVector.y;
+        Debug.Log(movementValue.ToString());
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -59,26 +64,21 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("RunState", 0);
         }
-
+        Debug.Log("Test");
         /*if (Input.GetKeyDown(KeyCode.Z))
         {
             animator.SetTrigger("Attack");
         }*/
-
     }
 
     void Update()
     {
-
-        CheckMeleeTimer();
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Z))
         {
             
-            Onattack();
             animator.SetTrigger("Attack");
-            
-            
         }
+        
 
         //make sprite look left/right
         if (movementX > 0) transform.localScale = new Vector3(-scale.x, scale.y, scale.z);

@@ -9,12 +9,12 @@ public class Enemy : MonoBehaviour
 
     public float speed = 0.5f;
     public Transform Player;
-    float health, MaxHealth = 6f;
+    
 
     // Use this for initialization
     void Start()
     {
-        health = MaxHealth;
+        
     }
 
     // Update is called once per frame
@@ -27,18 +27,9 @@ public class Enemy : MonoBehaviour
             transform.position += (displacement * speed * Time.deltaTime);
 
         }
-
-    }
-    public void TakeDamage(float damage)
-    {
-        health -= damage;
-        if (health <= 0){
-            Destroy(gameObject);
-        }
-        Debug.Log(health);
-
-    }     
         
+    }
+   
     
 
 }
