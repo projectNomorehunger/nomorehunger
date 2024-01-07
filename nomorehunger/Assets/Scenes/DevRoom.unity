@@ -6583,7 +6583,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1631264403
+--- !u!1001 &1646840667
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -6593,11 +6593,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 923948781919962801, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.7719297
+      value: -3.8888006
       objectReference: {fileID: 0}
     - target: {fileID: 923948781919962801, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.2048194
+      value: -2.7065437
       objectReference: {fileID: 0}
     - target: {fileID: 923948781919962801, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6771,6 +6771,10 @@ PrefabInstance:
     - target: {fileID: 9065350105921694460, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
       propertyPath: m_Name
       value: UI Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 9065350105921694460, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7120,5 +7124,5 @@ SceneRoots:
   - {fileID: 1535322592}
   - {fileID: 4637681840495758363}
   - {fileID: 264118887837092662}
-  - {fileID: 1631264403}
   - {fileID: 3178206023348388119}
+  - {fileID: 1646840667}
