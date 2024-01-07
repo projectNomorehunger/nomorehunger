@@ -78,7 +78,6 @@ public class QuestObject : MonoBehaviour
         if (collision.tag == "Player")
         {
             inTrigger = true;
-            Debug.Log("in trigger");
         }
     }
 

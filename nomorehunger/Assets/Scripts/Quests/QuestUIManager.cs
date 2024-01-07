@@ -90,7 +90,6 @@ public class QuestUIManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            Debug.Log("Q Pressed");
             questLogPanelActive = !questLogPanelActive;
             ShowQuestLogPanel();
             

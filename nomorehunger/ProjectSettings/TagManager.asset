@@ -5,16 +5,17 @@ TagManager:
   serializedVersion: 2
   tags:
   - NPC
+  - enemy
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - enemy
+  - 
   - Water
   - UI
   - 
   - 
-  - 
+  - Enemy
   - 
   - 
   - 

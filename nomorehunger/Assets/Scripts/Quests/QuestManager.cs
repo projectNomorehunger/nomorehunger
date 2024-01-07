@@ -52,14 +52,14 @@ public class QuestManager : MonoBehaviour
         {
             for (int j = 0; j < NPCQuestObject.receivableQuestIDs.Count; j++)
             {
-                if (currentQuestList[i].id == NPCQuestObject.receivableQuestIDs[j] && currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED || currentQuestList[i].progress == Quest.QuestProgress.COMPLETE)
+                if (currentQuestList[i].id == NPCQuestObject.receivableQuestIDs[j] && (currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED || currentQuestList[i].progress == Quest.QuestProgress.COMPLETE))
                 {
                     Debug.Log("Quest ID: " + NPCQuestObject.receivableQuestIDs[j] + " is " + currentQuestList[i].progress);
 
                     //CompleteQuest(NPCQuestObject.receivableQuestIDs[j]);
                     // quest ui manager
                     QuestUIManager.uiManager.questRunning = true;
-                    QuestUIManager.uiManager.activeQuests.Add(questList[i]);
+                    QuestUIManager.uiManager.activeQuests.Add(currentQuestList[i]); //!
                 }
             }
         }
@@ -72,10 +72,12 @@ public class QuestManager : MonoBehaviour
     {
         for(int i = 0; i < questList.Count; i++)
         {
-            if (questList[i].id == questID && questList[i].progress == Quest.QuestProgress.AVAILABLE)
+            if ((questList[i].id == questID) && (questList[i].progress == Quest.QuestProgress.AVAILABLE))
             {
                 currentQuestList.Add(questList[i]);
                 questList[i].progress = Quest.QuestProgress.ACCEPTED;
+                //Debug.Log("current Quest id: " + currentQuestList[0].id);
+                //current Quest id is still 2
             } 
         }
     }
@@ -85,7 +87,7 @@ public class QuestManager : MonoBehaviour
     {
         for (int i = 0; i < currentQuestList.Count; i++)
         {
-            if (currentQuestList[i].id == questID && currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED)
+            if ((currentQuestList[i].id == questID) && (currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED))
             {
                 currentQuestList[i].progress = Quest.QuestProgress.AVAILABLE;
                 currentQuestList[i].questObjectiveCount = 0;
@@ -99,7 +101,7 @@ public class QuestManager : MonoBehaviour
     {
         for(int i = 0; i < currentQuestList.Count; i++)
         {
-            if (currentQuestList[i].id == questID && currentQuestList[i].progress == Quest.QuestProgress.COMPLETE)
+            if ((currentQuestList[i].id == questID) && (currentQuestList[i].progress == Quest.QuestProgress.COMPLETE))
             {
                 currentQuestList[i].progress = Quest.QuestProgress.DONE;
                 currentQuestList.Remove(currentQuestList[i]);

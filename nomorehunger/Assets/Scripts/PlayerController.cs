@@ -15,47 +15,38 @@ public class PlayerController : MonoBehaviour
 
     private float movementX;
     private float movementY;
-    //from round1
     private Vector3 scale;
-    
-    public GameObject Melee;
-    bool isAttacking = false;
-    float atkDuration = 0.07f;
-    float atkTimer = 0f;
+
+    //attackPoint thingy
+    public Transform attackPoint;
+    public float attackRange = 0.5f;
+    public LayerMask enemyLayers;
 
     private void Awake()
     {
         animator = GetComponent<Animator>();
-        
-    }
-    // Start is called before the first frame update
-    void Start()
-    {
         rb = GetComponent<Rigidbody2D>();
         scale = transform.localScale;
 
         speed = 5;
-
-        
     }
+
     void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
 
         movementX = movementVector.x;
         movementY = movementVector.y;
-        Debug.Log(movementValue.ToString());
     }
-    // Update is called once per frame
+
     void FixedUpdate()
     {
-        /* movement part */
+        //MOVEMENT
         Vector3 movement = new Vector3(movementX, movementY, 0.0f);
-        /*transform.Translate(movement.normalized * Time.deltaTime * speed);*/
         rb.MovePosition(transform.position + movement.normalized * Time.deltaTime * speed);
 
-        
-        //animation part
+
+        //ANIMATION
         if (movementX != 0 || movementY != 0)
         {
             animator.SetFloat("RunState", 0.5f);
@@ -64,60 +55,44 @@ public class PlayerController : MonoBehaviour
         {
             animator.SetFloat("RunState", 0);
         }
-        Debug.Log("Test");
-        /*if (Input.GetKeyDown(KeyCode.Z))
-        {
-            animator.SetTrigger("Attack");
-        }*/
+
     }
 
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            
-            animator.SetTrigger("Attack");
+            Attack();
         }
-        
 
-        //make sprite look left/right
+
+        //UPDATE ANIMATION
         if (movementX > 0) transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
         else if (movementX < 0) transform.localScale = new Vector3(scale.x, scale.y, scale.z);
 
-        /*Debug.Log(rb.position);*/
-
-       
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        /*Debug.Log("Trigger!");*/
-    }
 
-    void Onattack()
+    void Attack()
     {
-        if (!isAttacking)
+        animator.SetTrigger("Attack");
+
+        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+
+        foreach(Collider2D enemy in hitEnemies)
         {
-            Melee.SetActive(true);
-            isAttacking = true;
+            Debug.Log("hit " + enemy.name);
+            enemy.GetComponent<Monster0>().TakeDamage( GetComponent<PlayerStats>().damage );
         }
     }
-    void CheckMeleeTimer()
+
+    private void OnDrawGizmosSelected()
     {
-        if (isAttacking)
+        if(attackPoint == null)
         {
-            atkTimer += Time.deltaTime;
-            if(atkTimer >= atkDuration)
-            {
-                atkTimer = 0;
-                isAttacking= false;
-                Melee.SetActive(false);
-            }
+            return;
         }
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-   
+
 }
-
-
-
-
