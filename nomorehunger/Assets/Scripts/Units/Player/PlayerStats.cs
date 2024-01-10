@@ -13,7 +13,7 @@ public class PlayerStats : MonoBehaviour
     public int environment;
     public int social;
     public int gold;
-    /*public List<Loot> items;*/
+    public List<Loot> items;
 
     public void recieveDamage(int dmg)
     {
@@ -34,13 +34,13 @@ public class PlayerStats : MonoBehaviour
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
         damage = 30;
-        /*items = new List<Loot>();*/
+        items = new List<Loot>();
 
     }
 
-/*    public void GetItemDropped()
+    public void GetItemDropped()
     {
-        items.Add(new Loot("Monster Fang",1));
+        items.Add(new Loot("Monster Fang", 1));
         CheckQuestItems();
         Debug.Log("Items Dropped!");
     }
@@ -58,6 +58,6 @@ public class PlayerStats : MonoBehaviour
                 }
             }
         }
-    }*/
+    }
 
 }

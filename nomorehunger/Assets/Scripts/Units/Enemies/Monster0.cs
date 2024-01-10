@@ -9,7 +9,7 @@ public class Monster0 : MonoBehaviour
     private Animator _animator;
     public int maxHitpoints = 100;
     int hitpoints;
-   /* public UnityEvent itemDropped;*/
+    public UnityEvent itemDropped;
 
     private void Start()
     {
@@ -31,7 +31,7 @@ public class Monster0 : MonoBehaviour
     private void Death()
     {
         Debug.Log("Monster is dead");
-        /*itemDropped.Invoke();*/
+        itemDropped.Invoke();
 
         //die anim
         _animator.SetBool("isDead",true);
