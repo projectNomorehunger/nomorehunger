@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.SceneManagement;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class Monster0 : MonoBehaviour
 {
     private Animator _animator;
     public int maxHitpoints = 100;
     int hitpoints;
+   /* public UnityEvent itemDropped;*/
 
     private void Start()
     {
@@ -29,6 +31,7 @@ public class Monster0 : MonoBehaviour
     private void Death()
     {
         Debug.Log("Monster is dead");
+        /*itemDropped.Invoke();*/
 
         //die anim
         _animator.SetBool("isDead",true);
@@ -40,4 +43,6 @@ public class Monster0 : MonoBehaviour
             QuestManager.questManager.AddQuestItem("Defeated 1 Monster", 1);
         }
     }
+
+   
 }
