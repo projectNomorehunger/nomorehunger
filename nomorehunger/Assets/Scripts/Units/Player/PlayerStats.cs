@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
+
 [System.Serializable]
 public class PlayerStats : MonoBehaviour
 {    
+    Animator animator;
     public int maxHitpoints;
     public int hitpoints;
     public int damage;
@@ -15,15 +17,27 @@ public class PlayerStats : MonoBehaviour
     public int gold;
     public List<Loot> items;
 
-    public void recieveDamage(int dmg)
+    public void TakeDamage(int dmg)
     {
+        animator.SetTrigger("Hurt");
+
         this.hitpoints = this.hitpoints - dmg;
         if (this.hitpoints <= 0)
         {
             Death();
         }
+       
+   
+        
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TakeDamage(10);
+        }
+    }
     public void Death()
     {
         Debug.Log("dead");
@@ -31,6 +45,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Start()
     {
+        animator = GetComponent<Animator>();
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
         damage = 30;
@@ -59,5 +74,6 @@ public class PlayerStats : MonoBehaviour
             }
         }
     }
+
 
 }

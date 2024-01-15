@@ -169,6 +169,11 @@ Transform:
   - {fileID: 1347254650}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &509511208 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1700874292976570717, guid: 44ac91ba5ddb48343adea487c38ad550, type: 3}
+  m_PrefabInstance: {fileID: 1379124676305889355}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &618498899
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,6 +6644,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Monster0 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4841170100250971976, guid: e089613e1cd10fc448888728c6a00948, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6682,7 +6691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3448266572836180872, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1.0701904
+      value: 1.0702515
       objectReference: {fileID: 0}
     - target: {fileID: 3916459683922675846, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
       propertyPath: m_IsActive
@@ -6797,10 +6806,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 667495481084642709, guid: 44ac91ba5ddb48343adea487c38ad550, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1459998027540821663, guid: 44ac91ba5ddb48343adea487c38ad550, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -7035,12 +7040,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
+      propertyPath: speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 509511208}
+    - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -7069,6 +7082,10 @@ PrefabInstance:
     - target: {fileID: 4841170100250971976, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: m_Name
       value: Monster0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912328834570934321, guid: e089613e1cd10fc448888728c6a00948, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
