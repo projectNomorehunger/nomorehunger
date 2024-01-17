@@ -22,6 +22,9 @@ public class PlayerController : MonoBehaviour
     public float attackRange = 0.5f;
     public LayerMask enemyLayers;
 
+    public float attackRate = 2f;
+    float nextAttackTime = 0f;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -60,10 +63,15 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Z))
+        if(Time.time >= nextAttackTime)
         {
-            Attack();
+            if (Input.GetKeyDown(KeyCode.Z))
+            {
+                Attack();
+                nextAttackTime = Time.time + 1f / attackRate;
+            }
         }
+        
 
 
         //UPDATE ANIMATION

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.UI;
+using UnityEngine.Events;
 public class QuestObject : MonoBehaviour
 {
     private bool inTrigger = false;
@@ -16,6 +17,8 @@ public class QuestObject : MonoBehaviour
     public GameObject exclaimationMark;
     public Image questAvailableSprite;
     public Image questReceivableSprite;
+
+    public UnityEvent questAccepted;
 
    
     // Start is called before the first frame update
@@ -63,6 +66,7 @@ public class QuestObject : MonoBehaviour
                 //quest ui manager
                 QuestUIManager.uiManager.CheckQuests(this);
                 //QuestManager.questManager.QuestRequest(this);
+                questAccepted.Invoke();
             }
 
         }

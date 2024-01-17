@@ -40,7 +40,7 @@ public class PlayerStats : MonoBehaviour
     }
     public void Death()
     {
-        Debug.Log("dead");
+        Debug.Log("Player is Dead");
     }
 
     private void Start()
@@ -48,16 +48,40 @@ public class PlayerStats : MonoBehaviour
         animator = GetComponent<Animator>();
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
-        damage = 30;
+        damage = 10;
         items = new List<Loot>();
+        
 
     }
 
     public void GetItemDropped()
     {
-        items.Add(new Loot("Monster Fang", 1));
+        // items.Add(new Loot("Monster Fang", 1));
+        int index = FindItem("Monster Fang");
+        if ( index != -1)
+        {
+            items[index].amount++;
+        }
+        else
+        {
+            items.Add(new Loot("Monster Fang", 1));
+        }
+        
+        
         CheckQuestItems();
         Debug.Log("Items Dropped!");
+    }
+
+    private int FindItem(string name)
+    {
+        for(int i = 0; i < items.Count;i++) {
+            if (items[i].name == name)
+            {
+                return i;
+            }
+        }
+        return -1;
+    
     }
 
     void CheckQuestItems()
@@ -70,6 +94,22 @@ public class PlayerStats : MonoBehaviour
                 if (items[i].name == "Monster Fang" && items[i].amount > 0)
                 {
                     QuestManager.questManager.AddQuestItem("Get 1 Monster Teeth", 1);
+                }
+            }
+        }
+
+
+    }
+
+    public void CheckQuestItemsAmount()
+    {
+        if (QuestManager.questManager.RequestAcceptedQuest(3)) // quest 3 is item dropped
+        {
+            for (int i = 0; i < items.Count; i++)
+            {
+                if (items[i].name == "Monster Fang")
+                {
+                    QuestManager.questManager.AddQuestItem("Get 1 Monster Teeth", items[FindItem("Monster Fang")].amount);
                 }
             }
         }
