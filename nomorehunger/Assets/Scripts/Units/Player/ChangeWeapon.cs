@@ -7,7 +7,7 @@ public class ChangeWeapon : MonoBehaviour
 {
     void Start()
     {
-        GameObject.Find("R_Weapon_Sword").GetComponent<SpriteRenderer>().enabled = false;
+        GameObject.Find("R_Weapon_Sword").GetComponent<SpriteRenderer>().enabled = true;
         GameObject.Find("R_Weapon_Bow").GetComponent<SpriteRenderer>().enabled = false;
         GameObject.Find("R_Weapon_Axe").GetComponent<SpriteRenderer>().enabled = false;
         GameObject.Find("R_Weapon_Wand").GetComponent<SpriteRenderer>().enabled = false;
