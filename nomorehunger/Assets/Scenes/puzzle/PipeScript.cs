@@ -60,18 +60,18 @@ public class PipeScript : MonoBehaviour
                 gameManager.wrongMove();
             }
         }
-        else
-        {
-            if (transform.eulerAngles.z == correctRotation[0] && isPlaced == false)
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-            else if (isPlaced == true)
-            {
-                isPlaced = false;
-                gameManager.wrongMove();
-            }
-        }
+         else
+         {
+             if (transform.eulerAngles.z == correctRotation[0] && isPlaced == false)
+             {
+                 isPlaced = true;
+                 gameManager.correctMove();
+             }
+             else if (isPlaced == true)
+             {
+                 isPlaced = false;
+                 gameManager.wrongMove();
+             }
+         }
     }
 }

@@ -40827,7 +40827,7 @@ GameObject:
   - component: {fileID: 1633042912}
   - component: {fileID: 1633042911}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: warp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
