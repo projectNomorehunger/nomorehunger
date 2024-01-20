@@ -15,4 +15,9 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("Map1");
     }
+
+    public void StartCutScene()
+    {
+        SceneManager.LoadScene("CutSceneStart");
+    }
 }
