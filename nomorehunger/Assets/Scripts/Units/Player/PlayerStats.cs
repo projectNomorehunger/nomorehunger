@@ -6,7 +6,8 @@ using UnityEngine;
 
 [System.Serializable]
 public class PlayerStats : MonoBehaviour
-{    
+{
+    public static PlayerStats instance;
     Animator animator;
     public int maxHitpoints;
     public int hitpoints;
@@ -16,42 +17,34 @@ public class PlayerStats : MonoBehaviour
     public int social;
     public int gold;
     public List<Loot> items;
-
-    public void TakeDamage(int dmg)
+    private void Awake()
     {
-        animator.SetTrigger("Hurt");
-
-        this.hitpoints = this.hitpoints - dmg;
-        if (this.hitpoints <= 0)
-        {
-            Death();
-        }
-       
-   
-        
+        instance = this;
     }
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.T))
-        {
-            TakeDamage(10);
-        }
-    }
-    public void Death()
-    {
-        Debug.Log("Player is Dead");
-    }
-
     private void Start()
     {
         animator = GetComponent<Animator>();
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
-        damage = 10;
+        damage = 30;
         items = new List<Loot>();
         
+    }
 
+    public void TakeDamage(int dmg)
+    {
+        animator.SetTrigger("Hurt");
+
+        hitpoints = hitpoints - dmg;
+        if (this.hitpoints <= 0)
+        {
+            Death();
+        }
+    }
+
+    public void Death()
+    {
+        Debug.Log("Player is Dead");
     }
 
     public void GetItemDropped()
@@ -91,7 +84,7 @@ public class PlayerStats : MonoBehaviour
         {
             for (int i = 0; i < items.Count; i++)
             {
-                if (items[i].name == "Monster Fang" && items[i].amount > 0)
+                if (items[i].name == "Monster Fang" && items[i].amount >= 0)
                 {
                     QuestManager.questManager.AddQuestItem("Get 1 Monster Teeth", 1);
                 }
