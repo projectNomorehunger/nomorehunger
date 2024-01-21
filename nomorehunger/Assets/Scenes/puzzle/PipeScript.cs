@@ -1,16 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class PipeScript : MonoBehaviour
 {
-    float[] rotations = { 0,90,180,270 };
+    float[] rotations = { 0, 90, 180, 270 };
 
     public float[] correctRotation;
     [SerializeField]
     bool isPlaced = false;
 
-    int PossibleRots = 1;
+    int possibleRots = 1;
 
     GameManager gameManager;
 
@@ -21,57 +19,76 @@ public class PipeScript : MonoBehaviour
 
     private void Start()
     {
-        PossibleRots = correctRotation.Length;
-        int rand = Random.Range(0, rotations.Length);
-        transform.eulerAngles = new Vector3(0, 0, rotations[rand]);
-        
-        if(PossibleRots > 1)
-        {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1])
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-        }
-        else
-        {
-            if (transform.eulerAngles.z == correctRotation[0])
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-        }
+        possibleRots = correctRotation.Length;
+        RandomizeRotation();
+
+        CheckCorrectPlacement();
     }
 
     private void OnMouseDown()
     {
         transform.Rotate(new Vector3(0, 0, 90));
+        Debug.Log(possibleRots);
 
-        if (PossibleRots > 1)
+        if (possibleRots > 1)
         {
-            if (transform.eulerAngles.z == correctRotation[0] || transform.eulerAngles.z == correctRotation[1] && isPlaced == false)
+            if ((Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]) || Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[1])) && !isPlaced)
             {
                 isPlaced = true;
                 gameManager.correctMove();
             }
-            else if (isPlaced == true)
+            else if (isPlaced)
             {
                 isPlaced = false;
                 gameManager.wrongMove();
             }
         }
-         else
-         {
-             if (transform.eulerAngles.z == correctRotation[0] && isPlaced == false)
-             {
-                 isPlaced = true;
-                 gameManager.correctMove();
-             }
-             else if (isPlaced == true)
-             {
-                 isPlaced = false;
-                 gameManager.wrongMove();
-             }
-         }
+        else
+        {
+            if (Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]) && !isPlaced)
+            {
+                isPlaced = true;
+                gameManager.correctMove();
+            }
+            else if (isPlaced)
+            {
+                isPlaced = false;
+                gameManager.wrongMove();
+            }
+        }
+    }
+
+    private void RandomizeRotation()
+    {
+        int rand = Random.Range(0, rotations.Length);
+        transform.rotation = Quaternion.Euler(0, 0, rotations[rand]);
+    }
+
+    private void CheckCorrectPlacement()
+    {
+        if (possibleRots > 1)
+        {
+            if (Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]) || Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[1]))
+            {
+                isPlaced = true;
+                gameManager.correctMove();
+            }
+            else
+            {
+                isPlaced = false;
+            }
+        }
+        else
+        {
+            if (Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]))
+            {
+                isPlaced = true;
+                gameManager.correctMove();
+            }
+            else
+            {
+                isPlaced = false;
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public GameObject PipesHolder;
@@ -35,15 +35,17 @@ public class GameManager : MonoBehaviour
 
         Debug.Log("correct Move");
 
-        if(correctedPipes == totalPipes)
+        if (correctedPipes == totalPipes)
         {
             Debug.Log("You win!");
             WinText.SetActive(true);
+            SceneManager.LoadScene("Map2");
         }
     }
 
     public void wrongMove()
     {
         correctedPipes -= 1;
+        Debug.Log("wrong Move");
     }
 }
