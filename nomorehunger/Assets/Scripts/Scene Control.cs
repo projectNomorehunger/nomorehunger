@@ -6,7 +6,13 @@ using UnityEngine.SceneManagement;
 public class SceneControl : MonoBehaviour
 {
     
+
     public string SceneName;
+
+    private void Start()
+    {
+        DontDestroyOnLoad(PlayerStats.instance.gameObject);
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))

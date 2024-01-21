@@ -137,7 +137,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.11, y: 1.84}
+  m_AnchoredPosition: {x: -0.05, y: 1.09}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5300294252585401585
@@ -212,7 +212,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.10999, y: 1.84}
+  m_AnchoredPosition: {x: -0.05, y: 1.09}
   m_SizeDelta: {x: 1, y: 1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4301194143439270141
@@ -352,6 +352,9 @@ MonoBehaviour:
   exclaimationMark: {fileID: 5896799865221421251}
   questAvailableSprite: {fileID: 3768558774848017674}
   questReceivableSprite: {fileID: 4372060612139513578}
+  questAccepted:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &988822507642093126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -398,11 +401,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6618836181827056238, guid: a7ba75cb467a39c4facde25fd840f09e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6618836181827056238, guid: a7ba75cb467a39c4facde25fd840f09e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6618836181827056238, guid: a7ba75cb467a39c4facde25fd840f09e, type: 3}
       propertyPath: m_LocalPosition.x

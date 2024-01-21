@@ -104,7 +104,9 @@ public class QuestManager : MonoBehaviour
             if ((currentQuestList[i].id == questID) && (currentQuestList[i].progress == Quest.QuestProgress.COMPLETE))
             {
                 currentQuestList[i].progress = Quest.QuestProgress.DONE;
+                UpdateDoneCurrentQuest(currentQuestList[i].id);
                 currentQuestList.Remove(currentQuestList[i]);
+                
 
                 // REWARD
             }
@@ -150,6 +152,8 @@ public class QuestManager : MonoBehaviour
             if (currentQuestList[i].questObjectiveCount >= currentQuestList[i].questObjectiveRequirement && currentQuestList[i].progress == Quest.QuestProgress.ACCEPTED) 
             {
                 currentQuestList[i].progress = Quest.QuestProgress.COMPLETE;
+                UpdateCompleteCurrentQuest(currentQuestList[i].id);
+
             }
         }
     }
@@ -251,5 +255,28 @@ public class QuestManager : MonoBehaviour
                 QuestUIManager.uiManager.ShowQuestLog(currentQuestList[i]);
             }
         }
+    }
+
+    public void UpdateCompleteCurrentQuest(int questID)
+    {
+        foreach (Quest quest in questList)
+        {
+            if (quest.id == questID) {
+                quest.progress = Quest.QuestProgress.COMPLETE;
+            }
+        }
+        
+    }
+
+    public void UpdateDoneCurrentQuest(int questID)
+    {
+        foreach (Quest quest in questList)
+        {
+            if (quest.id == questID)
+            {
+                quest.progress = Quest.QuestProgress.DONE;
+            }
+        }
+
     }
 }

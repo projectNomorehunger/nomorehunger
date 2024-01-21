@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
     public float attackRate = 2f;
     float nextAttackTime = 0f;
 
-    private void Awake()
+    private void Start()
     {
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
@@ -90,7 +90,7 @@ public class PlayerController : MonoBehaviour
         foreach(Collider2D enemy in hitEnemies)
         {
             Debug.Log("hit " + enemy.name);
-            enemy.GetComponent<Monster0>().TakeDamage( GetComponent<PlayerStats>().damage );
+            enemy.GetComponent<Monster0>().TakeDamage( PlayerStats.instance.damage );
         }
     }
 
@@ -103,4 +103,8 @@ public class PlayerController : MonoBehaviour
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 
+    public void HurtAnimation()
+    {
+        animator.SetTrigger("Hurt");
+    }
 }

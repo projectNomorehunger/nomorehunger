@@ -2,13 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Events;
 
 
 [System.Serializable]
 public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
-    Animator animator;
+    //Animator animator;
     public int maxHitpoints;
     public int hitpoints;
     public int damage;
@@ -17,13 +18,24 @@ public class PlayerStats : MonoBehaviour
     public int social;
     public int gold;
     public List<Loot> items;
+
+    public UnityEvent Hurt;
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject); // Don't destroy this object when loading a new scene
+        }
+        else
+        {
+            // If an instance already exists, destroy this duplicate
+            Destroy(gameObject);
+        }
     }
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
         damage = 30;
@@ -31,9 +43,17 @@ public class PlayerStats : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            TakeDamage(10);
+        }
+    }
     public void TakeDamage(int dmg)
     {
-        animator.SetTrigger("Hurt");
+        //animator.SetTrigger("Hurt");
+        Hurt.Invoke();
 
         hitpoints = hitpoints - dmg;
         if (this.hitpoints <= 0)
