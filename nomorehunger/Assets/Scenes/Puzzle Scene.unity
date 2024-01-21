@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 80017550}
   - component: {fileID: 80017549}
   m_Layer: 0
-  m_Name: curveLeft (1)
+  m_Name: 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -954,7 +954,7 @@ GameObject:
   - component: {fileID: 287792491}
   - component: {fileID: 287792490}
   m_Layer: 0
-  m_Name: CurveRight
+  m_Name: 10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1100,7 +1100,7 @@ GameObject:
   - component: {fileID: 301635156}
   - component: {fileID: 301635155}
   m_Layer: 0
-  m_Name: straightPipe
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1754,7 +1754,7 @@ GameObject:
   - component: {fileID: 742175861}
   - component: {fileID: 742175860}
   m_Layer: 0
-  m_Name: curveLeft
+  m_Name: 9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1900,7 +1900,7 @@ GameObject:
   - component: {fileID: 790679056}
   - component: {fileID: 790679055}
   m_Layer: 0
-  m_Name: straightPipe (1)
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2283,7 +2283,7 @@ GameObject:
   - component: {fileID: 868438139}
   - component: {fileID: 868438138}
   m_Layer: 0
-  m_Name: straightPipe (5)
+  m_Name: 11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2514,7 +2514,7 @@ GameObject:
   - component: {fileID: 922578633}
   - component: {fileID: 922578632}
   m_Layer: 0
-  m_Name: CurveRight
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2744,7 +2744,7 @@ GameObject:
   - component: {fileID: 940122606}
   - component: {fileID: 940122605}
   m_Layer: 0
-  m_Name: straightPipe (3)
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3658,7 +3658,7 @@ GameObject:
   - component: {fileID: 1564253799}
   - component: {fileID: 1564253798}
   m_Layer: 0
-  m_Name: straightPipe (4)
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3889,7 +3889,7 @@ GameObject:
   - component: {fileID: 1702851457}
   - component: {fileID: 1702851456}
   m_Layer: 0
-  m_Name: curveLeft
+  m_Name: 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4287,7 +4287,7 @@ GameObject:
   - component: {fileID: 1873851820}
   - component: {fileID: 1873851819}
   m_Layer: 0
-  m_Name: straightPipe (2)
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
