@@ -39,7 +39,7 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You win!");
             WinText.SetActive(true);
-            SceneManager.LoadScene("Map2");
+            //SceneManager.LoadScene("Map2");
         }
     }
 

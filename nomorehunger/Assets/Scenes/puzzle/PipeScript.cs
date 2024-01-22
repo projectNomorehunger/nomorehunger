@@ -3,11 +3,15 @@
 public class PipeScript : MonoBehaviour
 {
     float[] rotations = { 0, 90, 180, 270 };
+    int[] positions = { 1, 2, 3, 4 };
 
     public float[] correctRotation;
+    public int[] correctPosition;
+
+    
     [SerializeField]
     bool isPlaced = false;
-
+    [SerializeField] int currentPipePosition = 0;
     int possibleRots = 1;
 
     GameManager gameManager;
@@ -19,76 +23,129 @@ public class PipeScript : MonoBehaviour
 
     private void Start()
     {
-        possibleRots = correctRotation.Length;
+        possibleRots = correctPosition.Length;
         RandomizeRotation();
-
         CheckCorrectPlacement();
+
     }
+
 
     private void OnMouseDown()
     {
         transform.Rotate(new Vector3(0, 0, 90));
-        Debug.Log(possibleRots);
-
-        if (possibleRots > 1)
+        ChangePipePosition();
+        
+        if (possibleRots == 2) // straightPipe
         {
-            if ((Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]) || Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[1])) && !isPlaced)
+            if (currentPipePosition == correctPosition[0] || currentPipePosition == correctPosition[1])
             {
                 isPlaced = true;
                 gameManager.correctMove();
             }
-            else if (isPlaced)
+            else if(currentPipePosition != correctPosition[0] || currentPipePosition != correctPosition[1])
             {
+                if (isPlaced) gameManager.wrongMove();
                 isPlaced = false;
-                gameManager.wrongMove();
+                
             }
+            else
+            {
+                Debug.Log("OnMouseDown straightPipe error");
+            }
+        }
+        else if(possibleRots == 1) //curvePipe
+        {
+            if (currentPipePosition == correctPosition[0])
+            {
+                isPlaced = true;
+                gameManager.correctMove();
+                
+            }
+            else if (currentPipePosition != correctPosition[0])
+            {
+                if (isPlaced) gameManager.wrongMove();
+                isPlaced = false;
+                
+            }
+            else
+            {
+                Debug.Log("OnMouseDown curvePipe error");
+            }
+         
         }
         else
         {
-            if (Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]) && !isPlaced)
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-            else if (isPlaced)
-            {
-                isPlaced = false;
-                gameManager.wrongMove();
-            }
+            Debug.Log("ERROR");
         }
+
+
     }
 
     private void RandomizeRotation()
     {
-        int rand = Random.Range(0, rotations.Length);
+        int rand = Random.Range(0, positions.Length);
+        currentPipePosition = rand + 1;
         transform.rotation = Quaternion.Euler(0, 0, rotations[rand]);
     }
 
     private void CheckCorrectPlacement()
     {
-        if (possibleRots > 1)
+        if (possibleRots == 2) // straightPipe
         {
-            if (Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]) || Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[1]))
+            if ( currentPipePosition == correctPosition[0] || currentPipePosition == correctPosition[1])
             {
                 isPlaced = true;
                 gameManager.correctMove();
             }
+            else if(currentPipePosition != correctPosition[0] || currentPipePosition != correctPosition[1])
+            {
+                if(isPlaced) gameManager.wrongMove();
+                isPlaced = false;
+            }
             else
             {
+                Debug.Log("CheckCorrectPlacement straightPipe Error");
+            }
+        }
+        else if(possibleRots == 1) // curvePipe
+        {
+            if (currentPipePosition == correctPosition[0])
+            {
+                isPlaced = true;
+                gameManager.correctMove();
+            }
+            else if (currentPipePosition != correctPosition[0])
+            {
+                if(isPlaced) gameManager.wrongMove();
                 isPlaced = false;
+
+            }
+            else
+            {
+                Debug.Log("CheckCorrectPlacement curvePipe Error");
             }
         }
         else
         {
-            if (Mathf.Approximately(transform.rotation.eulerAngles.z, correctRotation[0]))
-            {
-                isPlaced = true;
-                gameManager.correctMove();
-            }
-            else
-            {
-                isPlaced = false;
-            }
+            Debug.Log("ERROR2");
         }
     }
+
+    private void ChangePipePosition()
+    {
+        if(currentPipePosition == 1)
+        {
+            currentPipePosition = 2;
+        }else if (currentPipePosition == 2)
+        {
+            currentPipePosition = 3;
+        }else if(currentPipePosition == 3)
+        {
+            currentPipePosition = 4;
+        }else if(currentPipePosition == 4)
+        {
+            currentPipePosition = 1;
+        }
+    }
+    
 }
