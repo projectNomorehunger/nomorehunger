@@ -32,7 +32,6 @@ public class GameManager : MonoBehaviour
     public void correctMove()
     {
         correctedPipes += 1;
-
         Debug.Log("correct Move");
 
         if (correctedPipes == totalPipes)
@@ -45,7 +44,12 @@ public class GameManager : MonoBehaviour
 
     public void wrongMove()
     {
-        correctedPipes -= 1;
         Debug.Log("wrong Move");
+    }
+
+    public void CorrectToWrongMove()
+    {
+        correctedPipes -= 1;
+        Debug.Log("CorrectToWrong Move");
     }
 }
