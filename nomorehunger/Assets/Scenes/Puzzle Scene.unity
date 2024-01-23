@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 80017550}
   - component: {fileID: 80017549}
   m_Layer: 0
-  m_Name: curveLeft (1)
+  m_Name: curveLeft_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -300,7 +300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 270
+  correctPosition: 04000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &80017551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -951,10 +953,10 @@ GameObject:
   m_Component:
   - component: {fileID: 287792489}
   - component: {fileID: 287792492}
-  - component: {fileID: 287792491}
   - component: {fileID: 287792490}
+  - component: {fileID: 287792491}
   m_Layer: 0
-  m_Name: CurveRight
+  m_Name: curveRight_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -989,7 +991,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
+  correctPosition: 01000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!61 &287792491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1100,7 +1104,7 @@ GameObject:
   - component: {fileID: 301635156}
   - component: {fileID: 301635155}
   m_Layer: 0
-  m_Name: straightPipe
+  m_Name: straightPipe_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1181,7 +1185,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &301635157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1754,7 +1760,7 @@ GameObject:
   - component: {fileID: 742175861}
   - component: {fileID: 742175860}
   m_Layer: 0
-  m_Name: curveLeft
+  m_Name: curveLeft_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1817,8 +1823,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e7a8498c3864c4c93945ff5d8e7d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctRotation: []
+  correctRotation:
+  - 0
+  correctPosition: 01000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &742175862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1879,12 +1888,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 742175859}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.59, y: 1.05, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1122599461}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &790679053
 GameObject:
@@ -1899,7 +1908,7 @@ GameObject:
   - component: {fileID: 790679056}
   - component: {fileID: 790679055}
   m_Layer: 0
-  m_Name: straightPipe (1)
+  m_Name: straightPipe_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1980,7 +1989,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &790679057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2282,7 +2293,7 @@ GameObject:
   - component: {fileID: 868438139}
   - component: {fileID: 868438138}
   m_Layer: 0
-  m_Name: straightPipe (5)
+  m_Name: straightPipe_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2363,7 +2374,9 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
-  isPlaced: 0
+  correctPosition: 0200000004000000
+  isPlaced: 1
+  currentPipePosition: 0
 --- !u!212 &868438140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2513,7 +2526,7 @@ GameObject:
   - component: {fileID: 922578633}
   - component: {fileID: 922578632}
   m_Layer: 0
-  m_Name: CurveRight
+  m_Name: curveRight_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2527,8 +2540,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922578630}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0.9, y: -0.78, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.90000033, y: -0.77999985, z: 0}
   m_LocalScale: {x: 1.2, y: 1.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2593,7 +2606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 90
+  correctPosition: 02000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &922578634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2743,7 +2758,7 @@ GameObject:
   - component: {fileID: 940122606}
   - component: {fileID: 940122605}
   m_Layer: 0
-  m_Name: straightPipe (3)
+  m_Name: straightPipe_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2824,7 +2839,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &940122607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3059,11 +3076,12 @@ Transform:
   - {fileID: 1702851455}
   - {fileID: 1873851818}
   - {fileID: 80017548}
-  - {fileID: 940122604}
   - {fileID: 1564253797}
+  - {fileID: 940122604}
   - {fileID: 922578631}
-  - {fileID: 868438137}
+  - {fileID: 742175863}
   - {fileID: 287792489}
+  - {fileID: 868438137}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1224059222
@@ -3656,7 +3674,7 @@ GameObject:
   - component: {fileID: 1564253799}
   - component: {fileID: 1564253798}
   m_Layer: 0
-  m_Name: straightPipe (4)
+  m_Name: straightPipe_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3737,7 +3755,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &1564253800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3887,7 +3907,7 @@ GameObject:
   - component: {fileID: 1702851457}
   - component: {fileID: 1702851456}
   m_Layer: 0
-  m_Name: curveLeft
+  m_Name: curveLeft_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3967,7 +3987,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
+  correctPosition: 01000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &1702851458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4285,7 +4307,7 @@ GameObject:
   - component: {fileID: 1873851820}
   - component: {fileID: 1873851819}
   m_Layer: 0
-  m_Name: straightPipe (2)
+  m_Name: straightPipe_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4366,7 +4388,9 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
+  correctPosition: 0200000004000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &1873851821
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4480,4 +4504,3 @@ SceneRoots:
   - {fileID: 2005217858}
   - {fileID: 1420505232}
   - {fileID: 845744617}
-  - {fileID: 742175863}
