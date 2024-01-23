@@ -339,6 +339,75 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1920f7851020074793a33df0118abd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &788893643
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4866041335402081926, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_Name
+      value: WarpToPuzzle
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.3107896
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9404221
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.3445623
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8258955928247967526, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8586961556027097369, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
+      propertyPath: SceneName
+      value: Puzzle Scene
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dda10017159104a4ca8cd778ffb77a6e, type: 3}
 --- !u!1 &840228173
 GameObject:
   m_ObjectHideFlags: 0
@@ -105456,11 +105525,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: availableQuestIDs.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: receivableQuestIDs.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: availableQuestIDs.Array.data[0]
@@ -105471,8 +105540,16 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
+      propertyPath: availableQuestIDs.Array.data[2]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: receivableQuestIDs.Array.data[1]
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
+      propertyPath: receivableQuestIDs.Array.data[2]
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3844482886865193328, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: questAccepted.m_PersistentCalls.m_Calls.Array.size
@@ -105558,3 +105635,4 @@ SceneRoots:
   - {fileID: 133748691}
   - {fileID: 1182112014}
   - {fileID: 97614240}
+  - {fileID: 788893643}

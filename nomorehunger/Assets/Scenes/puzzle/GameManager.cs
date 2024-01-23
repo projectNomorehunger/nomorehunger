@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
     {
         WinText.SetActive(false);
         totalPipes = PipesHolder.transform.childCount;
-
+        
         Pipes = new GameObject[totalPipes];
 
         for (int i = 0; i < Pipes.Length; i++)
@@ -38,7 +38,9 @@ public class GameManager : MonoBehaviour
         {
             Debug.Log("You win!");
             WinText.SetActive(true);
-            //SceneManager.LoadScene("Map2");
+            
+            QuestManager.questManager.AddQuestItem("Puzzle Solved", 1);
+            SceneManager.LoadScene("Map2");
         }
     }
 

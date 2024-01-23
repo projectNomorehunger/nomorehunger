@@ -2978,6 +2978,67 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1044086510
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4.908042
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.9184425
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.20618396
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1360241026916662546, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4132244558061120805, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: m_Name
+      value: QuestManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 807312d99a806b7428039a36f154efb9, type: 3}
 --- !u!850595691 &1114920138
 LightingSettings:
   m_ObjectHideFlags: 0
@@ -4504,3 +4565,4 @@ SceneRoots:
   - {fileID: 2005217858}
   - {fileID: 1420505232}
   - {fileID: 845744617}
+  - {fileID: 1044086510}
