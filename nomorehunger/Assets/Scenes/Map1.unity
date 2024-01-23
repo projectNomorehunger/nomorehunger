@@ -497,7 +497,7 @@ MonoBehaviour:
   dialoguePanel: {fileID: 122071012}
   dialogueText: {fileID: 1129724488}
   dialogue:
-  - "\u0E27\u0E48\u0E32\u0E44\u0E07 Sam"
+  - "\u0E25\u0E2D\u0E07\u0E02\u0E36\u0E49\u0E19\u0E44\u0E1B\u0E17\u0E32\u0E07\u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19\u0E2A\u0E34"
   - 
   wordSpeed: 0.1
   playerIsClose: 0
