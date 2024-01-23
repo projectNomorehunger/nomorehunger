@@ -300,7 +300,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 270
+  correctPosition: 04000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &80017551
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -951,8 +953,8 @@ GameObject:
   m_Component:
   - component: {fileID: 287792489}
   - component: {fileID: 287792492}
-  - component: {fileID: 287792491}
   - component: {fileID: 287792490}
+  - component: {fileID: 287792491}
   m_Layer: 0
   m_Name: curveRight_10
   m_TagString: Untagged
@@ -989,7 +991,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
+  correctPosition: 01000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!61 &287792491
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1181,7 +1185,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &301635157
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1819,7 +1825,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
+  correctPosition: 01000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &742175862
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1981,7 +1989,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &790679057
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2364,7 +2374,9 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
-  isPlaced: 0
+  correctPosition: 0200000004000000
+  isPlaced: 1
+  currentPipePosition: 0
 --- !u!212 &868438140
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2594,7 +2606,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 90
+  correctPosition: 02000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &922578634
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2825,7 +2839,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &940122607
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3739,7 +3755,9 @@ MonoBehaviour:
   correctRotation:
   - 0
   - 180
+  correctPosition: 0100000003000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &1564253800
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3969,7 +3987,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   correctRotation:
   - 0
+  correctPosition: 01000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &1702851458
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4368,7 +4388,9 @@ MonoBehaviour:
   correctRotation:
   - 90
   - 270
+  correctPosition: 0200000004000000
   isPlaced: 0
+  currentPipePosition: 0
 --- !u!212 &1873851821
 SpriteRenderer:
   m_ObjectHideFlags: 0

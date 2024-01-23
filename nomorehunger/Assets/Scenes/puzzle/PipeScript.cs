@@ -37,16 +37,19 @@ public class PipeScript : MonoBehaviour
         
         if (possibleRots == 2) // straightPipe
         {
-            if (currentPipePosition == correctPosition[0] || currentPipePosition == correctPosition[1])
+            if ((currentPipePosition == correctPosition[0] || currentPipePosition == correctPosition[1]) && !isPlaced) // False to True
             {
-                isPlaced = true;
                 gameManager.correctMove();
+                isPlaced = true;
             }
-            else if(currentPipePosition != correctPosition[0] || currentPipePosition != correctPosition[1])
+            else if((currentPipePosition != correctPosition[0] && currentPipePosition != correctPosition[1]) && !isPlaced) // False to False
             {
-                if (isPlaced) gameManager.wrongMove();
                 isPlaced = false;
-                
+ 
+            }else if ((currentPipePosition != correctPosition[0] && currentPipePosition != correctPosition[1]) && isPlaced) // True to False
+            {
+                gameManager.CorrectToWrongMove();
+                isPlaced = false;
             }
             else
             {
@@ -55,17 +58,21 @@ public class PipeScript : MonoBehaviour
         }
         else if(possibleRots == 1) //curvePipe
         {
-            if (currentPipePosition == correctPosition[0])
+            if ((currentPipePosition == correctPosition[0]) && !isPlaced)
             {
                 isPlaced = true;
                 gameManager.correctMove();
                 
             }
-            else if (currentPipePosition != correctPosition[0])
+            else if ((currentPipePosition != correctPosition[0]) && !isPlaced)
             {
-                if (isPlaced) gameManager.wrongMove();
                 isPlaced = false;
                 
+            }
+            else if ((currentPipePosition != correctPosition[0]) && isPlaced)
+            {
+                gameManager.CorrectToWrongMove();
+                isPlaced = false;
             }
             else
             {
@@ -94,12 +101,12 @@ public class PipeScript : MonoBehaviour
         {
             if ( currentPipePosition == correctPosition[0] || currentPipePosition == correctPosition[1])
             {
-                isPlaced = true;
                 gameManager.correctMove();
+                isPlaced = true;
             }
-            else if(currentPipePosition != correctPosition[0] || currentPipePosition != correctPosition[1])
+            else if(currentPipePosition != correctPosition[0] && currentPipePosition != correctPosition[1])
             {
-                if(isPlaced) gameManager.wrongMove();
+                gameManager.wrongMove();
                 isPlaced = false;
             }
             else
@@ -111,12 +118,12 @@ public class PipeScript : MonoBehaviour
         {
             if (currentPipePosition == correctPosition[0])
             {
-                isPlaced = true;
                 gameManager.correctMove();
+                isPlaced = true;
             }
             else if (currentPipePosition != correctPosition[0])
             {
-                if(isPlaced) gameManager.wrongMove();
+                gameManager.wrongMove();
                 isPlaced = false;
 
             }
