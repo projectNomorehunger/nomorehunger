@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         scale = transform.localScale;
 
-        speed = 5;
+        speed = 6;
     }
 
     void OnMove(InputValue movementValue)
