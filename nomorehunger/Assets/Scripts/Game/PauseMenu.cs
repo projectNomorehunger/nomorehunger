@@ -2,11 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
     public static bool isPause;
-    
+
+    [SerializeField] private GameObject _resumeFirst;
+    [SerializeField] private GameObject _mainMenuFirst;
+    [SerializeField] private GameObject _quitFirst;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +22,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (InputManager.instance.MenuOpenCloseInput)
         {
             if (isPause)
             {
@@ -29,20 +35,28 @@ public class PauseMenu : MonoBehaviour
         }
     }
 
+    #region Pause/Unpause Functions
     public void PauseGame()
     {
         pauseMenu.SetActive(true);
         Time.timeScale = 0f;
         isPause = true;
+
+        EventSystem.current.SetSelectedGameObject(_resumeFirst);
+
     }
 
     public void ResumeGame()
     {
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
-        isPause = false;    
+        isPause = false;
+
     }
 
+    #endregion
+
+    #region Canvas Activations
     public void GoToMainMenu()
     {
         Time.timeScale = 1f;
@@ -53,4 +67,24 @@ public class PauseMenu : MonoBehaviour
     {
         Application.Quit();
     }
+
+    #endregion
+
+    #region Main Menu Button Actions
+
+    public void OnResumePress()
+    {
+        ResumeGame();
+    }
+
+    public void OnMainMenuPress()
+    {
+        
+    }
+
+    public void OnQuitPress()
+    {
+
+    }
+    #endregion
 }

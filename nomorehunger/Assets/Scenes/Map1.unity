@@ -35522,8 +35522,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 9065350105921694460, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 189590263232976723, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3fefdb7a007ab7e4688b38d2c3e7efe7, type: 3}
