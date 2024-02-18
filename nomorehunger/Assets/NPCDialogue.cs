@@ -15,7 +15,7 @@ public class NPCDialogue : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.Space) && playerIsClose)
         {
             if (dialoguePanel.activeInHierarchy)
             {
@@ -39,20 +39,20 @@ public class NPCDialogue : MonoBehaviour
 
     IEnumerator Typing()
     {
-        foreach(char letter in dialogue[index].ToCharArray())
+        foreach (char letter in dialogue[index].ToCharArray())
         {
             dialogueText.text += letter;
             yield return new WaitForSeconds(wordSpeed);
         }
     }
-            
+
     public void NextLine()
     {
-        if (index < dialogue.Length-1) 
+        if (index < dialogue.Length - 1)
         {
             index++;
             dialogueText.text = "";
-            StartCoroutine(Typing());   
+            StartCoroutine(Typing());
         }
         else
         {
