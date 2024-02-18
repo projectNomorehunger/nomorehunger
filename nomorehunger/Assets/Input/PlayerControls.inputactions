@@ -1,5 +1,5 @@
 {
-    "name": "PlayerControl",
+    "name": "PlayerControls",
     "maps": [
         {
             "name": "Player",
@@ -9,6 +9,15 @@
                     "name": "MenuOpenClose",
                     "type": "Button",
                     "id": "65d5aed5-b2ab-40de-b024-78d6897850d9",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "QuestMenuOpenClose",
+                    "type": "Button",
+                    "id": "f995386b-bf89-4058-9b60-ba290de1b627",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -24,6 +33,17 @@
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "MenuOpenClose",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fc011b41-29a6-4de9-855c-068359de606d",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": "QuestMenuOpenClose",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
