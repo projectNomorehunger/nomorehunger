@@ -22,7 +22,7 @@ public class PauseMenu : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (InputManager.instance.MenuOpenCloseInput)
+        if (PlayerController.instance.MenuOpenCloseInput && QuestUIManager.questLogPanelUIEnabled == false) 
         {
             if (isPause)
             {
@@ -79,12 +79,12 @@ public class PauseMenu : MonoBehaviour
 
     public void OnMainMenuPress()
     {
-        
+        GoToMainMenu();
     }
 
     public void OnQuitPress()
     {
-
+        QuitGame();
     }
     #endregion
 }

@@ -12,7 +12,7 @@ public class InputManager : MonoBehaviour
     private PlayerInput _playerInput;
 
     private InputAction _menuOpenCloseAction;
-    private InputAction _questMeunOpenCloseAction;
+    private InputAction _questMenuOpenCloseAction;
 
     private void Awake()
     {
@@ -23,7 +23,7 @@ public class InputManager : MonoBehaviour
 
         _playerInput = GetComponent<PlayerInput>();
         _menuOpenCloseAction = _playerInput.actions["MenuOpenClose"];
-    }
+    }                                                                                                                                                                                                                       
 
     private void Update()
     {

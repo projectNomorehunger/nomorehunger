@@ -52607,8 +52607,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 5598021452146593596, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598021452146593596, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5598021452146593596, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -25.451782
+      value: -25.451784
       objectReference: {fileID: 0}
     - target: {fileID: 5598021452146593596, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
       propertyPath: m_LocalPosition.y
@@ -52649,6 +52657,14 @@ PrefabInstance:
     - target: {fileID: 7568549222299809648, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
       propertyPath: m_Name
       value: InputManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7568549222299809648, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8501019100081239640, guid: ab74b1492c101684390799d1c009d4ec, type: 3}
+      propertyPath: m_DefaultControlScheme
+      value: Keyboard
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -53003,5 +53019,5 @@ SceneRoots:
   - {fileID: 5187417043631542078}
   - {fileID: 654938268}
   - {fileID: 1785320810}
-  - {fileID: 1770550795}
   - {fileID: 707796630}
+  - {fileID: 1770550795}

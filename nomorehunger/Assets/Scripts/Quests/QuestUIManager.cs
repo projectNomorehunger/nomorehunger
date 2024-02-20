@@ -2,18 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 using TMPro;
 
 public class QuestUIManager : MonoBehaviour
 {
     public static QuestUIManager uiManager;
+    [SerializeField] private GameObject _questButtonFirst;
 
     //BOOLS 
     public bool questAvailable = false;
     public bool questRunning = false;
     public bool questPanelActive = false;
     private bool questLogPanelActive = false;
-
+    public static bool questLogPanelUIEnabled = false;
     //PANELS
     public GameObject questPanel;
     public GameObject questLogPanel;
@@ -88,11 +90,13 @@ public class QuestUIManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q))
+        if (PlayerController.instance.QuestMenuOpenCloseInput && PauseMenu.isPause == false)
         {
             questLogPanelActive = !questLogPanelActive;
+            questLogPanelUIEnabled = !questLogPanelUIEnabled;
             ShowQuestLogPanel();
-            
+            EventSystem.current.SetSelectedGameObject(_questButtonFirst);
+
         }
     }
 
@@ -119,6 +123,7 @@ public class QuestUIManager : MonoBehaviour
         questPanel.SetActive(questPanelActive);
         //FILL IN DATA
         FillQuestButtons();
+        
     }
 
     public void ShowQuestLogPanel()
@@ -130,7 +135,7 @@ public class QuestUIManager : MonoBehaviour
             {
                 GameObject questButton = Instantiate(qLogButton);
                 QLogButtonScript qbutton = questButton.GetComponent<QLogButtonScript>();
-
+                _questButtonFirst = questButton;
                 qbutton.questID = curQuest.id;
                 qbutton.questTitle.text = curQuest.title;
 
@@ -188,6 +193,7 @@ public class QuestUIManager : MonoBehaviour
     public void HideQuestLogPanel()
     {
         questLogPanelActive = false;
+        questLogPanelUIEnabled = false;
 
         questLogTitle.text = "";
         questLogDescription.text = "";
