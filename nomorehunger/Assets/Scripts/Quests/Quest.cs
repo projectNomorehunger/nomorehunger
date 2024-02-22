@@ -22,5 +22,8 @@ public class Quest
 
     public int expReward;
     public int goldReward;
+    public int ECOReward;
+    public int SOCReward;
+    public int ENVIReward;
     public string itemReward;
 }

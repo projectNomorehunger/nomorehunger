@@ -13,13 +13,15 @@ public class PlayerStats : MonoBehaviour
     public int maxHitpoints;
     public int hitpoints;
     public int damage;
-    public int economy;
-    public int environment;
-    public int social;
+    public int ECO;
+    public int ENVI;
+    public int SOC;
     public int gold;
     public List<Loot> items;
 
     public UnityEvent Hurt;
+
+    #region UnityWorkFlow
     private void Awake()
     {
         if (instance == null)
@@ -39,6 +41,9 @@ public class PlayerStats : MonoBehaviour
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
         damage = 30;
+        ECO = 1;
+        ENVI = 5;
+        SOC = 5;
         items = new List<Loot>();
         
     }
@@ -50,6 +55,8 @@ public class PlayerStats : MonoBehaviour
             TakeDamage(10);
         }
     }
+    #endregion
+
     public void TakeDamage(int dmg)
     {
         //animator.SetTrigger("Hurt");
@@ -97,6 +104,7 @@ public class PlayerStats : MonoBehaviour
     
     }
 
+    #region Quest System
     void CheckQuestItems()
     {
         //if questActive;
@@ -128,5 +136,5 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
-
+    #endregion
 }

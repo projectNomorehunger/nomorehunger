@@ -6,24 +6,30 @@ using TMPro;
 
 public class PlayerUIManager : MonoBehaviour
 {
-    public TextMeshProUGUI hitpointsText;
+    public TextMeshProUGUI ECOScoreText;
+    public TextMeshProUGUI ENVIScoreText;
+    public TextMeshProUGUI SOCScoreText;
 
-    // Start is called before the first frame update
     void Start()
     {
-        
-        hitpointsText.text = "HP: " + 0.ToString();
+        ECOScoreText.text = "0";
+        ENVIScoreText.text = "0";
+        SOCScoreText.text = "0";
     }
 
-    // Update is called once per frame
     void Update()
     {
-        // Debug.Log("Update method called."); // Add this line for debugging
-
-        if (hitpointsText != null)
+      
+        if (ECOScoreText != null)
         {
-            hitpointsText.text = "HP: " + PlayerStats.instance.hitpoints.ToString();
-            // Debug.Log("UI text updated."); // Add this line for debugging
+            ECOScoreText.text = PlayerStats.instance.ECO.ToString();
+        }
+        if (ENVIScoreText != null) {
+            ENVIScoreText.text = PlayerStats.instance.ENVI.ToString();
+        }
+        if (SOCScoreText != null)
+        {
+            SOCScoreText.text = PlayerStats.instance.SOC.ToString();
         }
     }
 }

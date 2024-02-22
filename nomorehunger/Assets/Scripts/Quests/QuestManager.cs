@@ -105,10 +105,13 @@ public class QuestManager : MonoBehaviour
             {
                 currentQuestList[i].progress = Quest.QuestProgress.DONE;
                 UpdateDoneCurrentQuest(currentQuestList[i].id);
-                currentQuestList.Remove(currentQuestList[i]);
-                
-
                 // REWARD
+                PlayerStats.instance.ECO += currentQuestList[i].ECOReward;
+                PlayerStats.instance.SOC += currentQuestList[i].SOCReward;
+                PlayerStats.instance.ENVI += currentQuestList[i].ENVIReward;
+
+                currentQuestList.Remove(currentQuestList[i]);
+
             }
         }
         //check for chain quest
