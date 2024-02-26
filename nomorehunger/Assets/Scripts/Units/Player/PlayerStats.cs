@@ -19,7 +19,7 @@ public class PlayerStats : MonoBehaviour
     public int gold;
     public List<Loot> items;
 
-    public UnityEvent Hurt;
+    //public UnityEvent Hurt;
 
     #region UnityWorkFlow
     private void Awake()
@@ -37,19 +37,20 @@ public class PlayerStats : MonoBehaviour
     }
     private void Start()
     {
-        //animator = GetComponent<Animator>();
         maxHitpoints = 100;
         hitpoints = maxHitpoints;
         damage = 30;
         ECO = 1;
         ENVI = 5;
         SOC = 5;
+        gold = 0;
         items = new List<Loot>();
         
     }
 
     private void Update()
     {
+        //DEBUG
         if (Input.GetKeyDown(KeyCode.T))
         {
             TakeDamage(10);
@@ -59,8 +60,7 @@ public class PlayerStats : MonoBehaviour
 
     public void TakeDamage(int dmg)
     {
-        //animator.SetTrigger("Hurt");
-        Hurt.Invoke();
+        PlayerController.instance.HurtAnimation();
 
         hitpoints = hitpoints - dmg;
         if (this.hitpoints <= 0)
