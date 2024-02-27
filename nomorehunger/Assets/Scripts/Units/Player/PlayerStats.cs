@@ -19,6 +19,7 @@ public class PlayerStats : MonoBehaviour
     public int gold;
     public List<Loot> items;
 
+    public static bool isDead { get; set; }
     //public UnityEvent Hurt;
 
     #region UnityWorkFlow
@@ -45,6 +46,7 @@ public class PlayerStats : MonoBehaviour
         SOC = 5;
         gold = 0;
         items = new List<Loot>();
+        isDead = false;
         
     }
 
@@ -55,6 +57,7 @@ public class PlayerStats : MonoBehaviour
         {
             TakeDamage(10);
         }
+        
     }
     #endregion
 
@@ -72,6 +75,15 @@ public class PlayerStats : MonoBehaviour
     public void Death()
     {
         Debug.Log("Player is Dead");
+        isDead = true;
+        PlayerController.instance.DeathAnimation();
+        DeathMenu.instance.GameOver();
+    }
+
+    public void Respawn()
+    {
+        hitpoints = maxHitpoints;
+        isDead = false;
     }
 
     public void GetItemDropped()

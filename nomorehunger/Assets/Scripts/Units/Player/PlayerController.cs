@@ -4,13 +4,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UIElements;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
 
     /* Component Variable */
-    public TextMeshProUGUI ui;
     private Rigidbody2D rb;
     private Animator animator;
 
@@ -31,11 +31,13 @@ public class PlayerController : MonoBehaviour
     /* Input Variable */
     public bool MenuOpenCloseInput { get; private set; }
     public bool QuestMenuOpenCloseInput { get; private set; }
+    public bool GameOverInput { get; private set; }
 
     private PlayerInput _playerInput;
 
     private InputAction _menuOpenCloseAction;
     private InputAction _questMenuOpenCloseAction;
+    private InputAction _gameOverAction;
 
     #region UnityWorkFlow
     private void Awake()
@@ -48,6 +50,7 @@ public class PlayerController : MonoBehaviour
         _playerInput = GetComponent<PlayerInput>();
         _menuOpenCloseAction = _playerInput.actions["MenuOpenClose"];
         _questMenuOpenCloseAction = _playerInput.actions["QuestMenuOpenClose"];
+        _gameOverAction = _playerInput.actions["GameOver"];
     }
     private void Start()
     {
@@ -62,6 +65,7 @@ public class PlayerController : MonoBehaviour
         //UI MENU PRESS
         MenuOpenCloseInput = _menuOpenCloseAction.WasPressedThisFrame();
         QuestMenuOpenCloseInput = _questMenuOpenCloseAction.WasPressedThisFrame();
+        GameOverInput = _gameOverAction.WasPressedThisFrame();
 
         //ATTACK PRESS
         if (Time.time >= nextAttackTime)
@@ -73,6 +77,11 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            Spawn(SpawnPoint.position);
+            Debug.Log(SpawnPoint.position);
+        }
         //UPDATE ANIMATION
         if (movementX > 0) transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
         else if (movementX < 0) transform.localScale = new Vector3(scale.x, scale.y, scale.z);
@@ -80,7 +89,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (!QuestUIManager.questLogPanelUIEnabled)
+        if (!QuestUIManager.questLogPanelUIEnabled && !PlayerStats.isDead)
         {
             //MOVEMENT
             Vector3 movement = new Vector3(movementX, movementY, 0.0f);
@@ -105,7 +114,7 @@ public class PlayerController : MonoBehaviour
     #region Input
     public void OnMove(InputValue movementValue)
     {
-        if(!PauseMenu.isPause)
+        if(!PauseMenu.isPause && !PlayerStats.isDead)
         {
             Vector2 movementVector = movementValue.Get<Vector2>();
             movementX = movementVector.x;
@@ -148,5 +157,17 @@ public class PlayerController : MonoBehaviour
     {
         animator.SetTrigger("Hurt");
     }
+
+    public void DeathAnimation()
+    {
+        animator.SetTrigger("Die");
+    }
+    public void Spawn(Vector3 position)
+    {
+        rb.position = position;
+        transform.position = position;
+        animator.SetTrigger("Alive");
+    }
+
     #endregion
 }
