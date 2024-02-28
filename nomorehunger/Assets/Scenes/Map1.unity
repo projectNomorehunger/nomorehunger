@@ -52742,6 +52742,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerUIManager
       objectReference: {fileID: 0}
+    - target: {fileID: 5991416769761740479, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_text
+      value: Press Space
+      objectReference: {fileID: 0}
     - target: {fileID: 8501212855245026372, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
       propertyPath: m_Pivot.x
       value: 0
