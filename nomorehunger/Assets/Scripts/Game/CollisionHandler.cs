@@ -5,12 +5,12 @@ using UnityEngine;
 
 public class CollisionHandler : MonoBehaviour
 {
-    private bool inTrigger;
+   
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player")
         {
-            inTrigger = true;
+       
             QuestManager.questManager.AddQuestItem("go to mine town", 1);
         }
     }
@@ -19,7 +19,7 @@ public class CollisionHandler : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            inTrigger = false;
+          
         }
     }
 }

@@ -47,6 +47,10 @@ public class PlayerController : MonoBehaviour
             instance = this;
         }
 
+        animator = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
+        scale = transform.localScale;
+
         _playerInput = GetComponent<PlayerInput>();
         _menuOpenCloseAction = _playerInput.actions["MenuOpenClose"];
         _questMenuOpenCloseAction = _playerInput.actions["QuestMenuOpenClose"];
@@ -54,9 +58,9 @@ public class PlayerController : MonoBehaviour
     }
     private void Start()
     {
-        animator = GetComponent<Animator>();
+        /*animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
-        scale = transform.localScale;
+        scale = transform.localScale;*/
 
         speed = 6;
     }
@@ -77,11 +81,11 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.W))
+        /*if (Input.GetKeyDown(KeyCode.W))
         {
             Spawn(SpawnPoint.position);
-            Debug.Log(SpawnPoint.position);
-        }
+            //Debug.Log(SpawnPoint.position);
+        }*/
         //UPDATE ANIMATION
         if (movementX > 0) transform.localScale = new Vector3(-scale.x, scale.y, scale.z);
         else if (movementX < 0) transform.localScale = new Vector3(scale.x, scale.y, scale.z);
@@ -164,8 +168,8 @@ public class PlayerController : MonoBehaviour
     }
     public void Spawn(Vector3 position)
     {
-        rb.position = position;
-        transform.position = position;
+        instance.rb.position = position;
+        instance.transform.position = position;
         animator.SetTrigger("Alive");
     }
 

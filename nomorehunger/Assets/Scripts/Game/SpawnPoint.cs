@@ -10,7 +10,7 @@ public class SpawnPoint : MonoBehaviour
     void Start()
     {
         position = transform.position;
-        Debug.Log(position);
+       
     }
 
     
