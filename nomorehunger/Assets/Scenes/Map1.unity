@@ -35342,7 +35342,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: currentQuestList.Array.data[0].title
-      value: Go To Mine Town
+      value: "\u0E44\u0E1B  Mine Town"
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].questObjective
