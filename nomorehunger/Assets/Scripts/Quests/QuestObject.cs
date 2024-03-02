@@ -7,6 +7,8 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 public class QuestObject : MonoBehaviour
 {
+    public static QuestObject instance;
+    [SerializeField]
     private bool inTrigger = false;
 
     public List<int> availableQuestIDs = new List<int>();
@@ -20,7 +22,10 @@ public class QuestObject : MonoBehaviour
 
     public UnityEvent questAccepted;
 
-   
+    private void Awake()
+    {
+        instance = this;
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -59,7 +64,7 @@ public class QuestObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inTrigger && Input.GetKeyDown(KeyCode.Space))
+        /*if (inTrigger && Input.GetKeyDown(KeyCode.Space))
         {
             if(!QuestUIManager.uiManager.questPanelActive)
             {
@@ -69,7 +74,7 @@ public class QuestObject : MonoBehaviour
                 questAccepted.Invoke();
             }
 
-        }
+        }*/
     }
 
     private void LateUpdate()
@@ -93,4 +98,14 @@ public class QuestObject : MonoBehaviour
         }
     }
 
+    public void OpenQuestPanel()
+    {
+        if (!QuestUIManager.uiManager.questPanelActive)
+        {
+            //quest ui manager
+            QuestUIManager.uiManager.CheckQuests(this);
+            //QuestManager.questManager.QuestRequest(this);
+            questAccepted.Invoke();
+        }
+    }
 }
