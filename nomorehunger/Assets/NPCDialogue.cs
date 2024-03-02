@@ -9,9 +9,10 @@ public class NPCDialogue : MonoBehaviour
     public TextMeshProUGUI dialogueText;
     public string[] dialogue;
     private int index;
-
+    public GameObject contButton;
     public float wordSpeed;
     public bool playerIsClose;
+    public string quest;
 
     void Update()
     {
@@ -25,8 +26,14 @@ public class NPCDialogue : MonoBehaviour
             {
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
+                
             }
         }
+        if(dialogueText.text == dialogue[index])
+        {
+            contButton.SetActive(true); 
+        }
+
     }
 
 
@@ -48,6 +55,9 @@ public class NPCDialogue : MonoBehaviour
 
     public void NextLine()
     {
+
+
+        contButton.SetActive(false) ;
         if (index < dialogue.Length - 1)
         {
             index++;
@@ -57,6 +67,14 @@ public class NPCDialogue : MonoBehaviour
         else
         {
             zeroText();
+            /*if (!QuestUIManager.uiManager.questPanelActive)
+            {
+                //quest ui manager
+                QuestUIManager.uiManager.CheckQuests(this);
+                //QuestManager.questManager.QuestRequest(this);
+                questAccepted.Invoke();
+            }*/
+            QuestObject.instance.OpenQuestPanel();
         }
     }
 
