@@ -159,18 +159,23 @@ public class PlayerController : MonoBehaviour
 
     public void HurtAnimation()
     {
-        animator.SetTrigger("Hurt");
+        if(PlayerStats.instance.hitpoints > 0)
+        {
+            animator.SetTrigger("Hurt");
+        }
+        
     }
 
     public void DeathAnimation()
     {
-        animator.SetTrigger("Die");
+        animator.SetBool("Dead",true);
     }
     public void Spawn(Vector3 position)
     {
         instance.rb.position = position;
         instance.transform.position = position;
         animator.SetTrigger("Alive");
+        animator.SetBool("Dead", false);
     }
 
     #endregion

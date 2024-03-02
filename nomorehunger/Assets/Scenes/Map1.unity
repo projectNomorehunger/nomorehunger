@@ -131,9 +131,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4390119319354713393, guid: 6858f9312fa8ff7419d553aed0fc9d2e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5008237818722138897, guid: 6858f9312fa8ff7419d553aed0fc9d2e, type: 3}
       propertyPath: m_Name
       value: DialogBox
+      objectReference: {fileID: 0}
+    - target: {fileID: 6531908987197424826, guid: 6858f9312fa8ff7419d553aed0fc9d2e, type: 3}
+      propertyPath: m_UiScaleMode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6884741739557433810, guid: 6858f9312fa8ff7419d553aed0fc9d2e, type: 3}
       propertyPath: m_Pivot.x
