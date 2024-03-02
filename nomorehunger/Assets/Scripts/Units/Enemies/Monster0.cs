@@ -93,7 +93,7 @@ public class Monster0 : MonoBehaviour
         switch (enemyState)
         {
             case EnemyState.IDLE:
-                if (distance < 4) enemyState = EnemyState.RUN;
+                if (distance < 8) enemyState = EnemyState.RUN;
                 break;
 
             case EnemyState.RUN:
@@ -112,7 +112,7 @@ public class Monster0 : MonoBehaviour
                     break;
                 }
                 // RUN -> ATTACK
-                else if (distance <= 1.1)
+                else if (distance <= 1.2) //ATTACK RANGE
                 {
                     enemyState = EnemyState.ATTACK;
                     break;

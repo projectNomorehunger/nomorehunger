@@ -26,8 +26,8 @@ public class SceneController : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         currentSceneName = scene.name;
-        Debug.Log("CurrentSceneName = " + currentSceneName);
-        Debug.Log("BeforeSceneName = " + beforeSceneName);
+        //Debug.Log("CurrentSceneName = " + currentSceneName);
+        //Debug.Log("BeforeSceneName = " + beforeSceneName);
 
         PlayerSpawner.instance.OnWarpMap(beforeSceneName,currentSceneName);
 

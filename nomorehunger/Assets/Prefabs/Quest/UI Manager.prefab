@@ -1,73 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &189590263232976723
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3381126096843076754}
-  - component: {fileID: 7635734517913269044}
-  - component: {fileID: 6676915307457237755}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3381126096843076754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189590263232976723}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 5606330901802650420}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7635734517913269044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189590263232976723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!114 &6676915307457237755
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 189590263232976723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_HorizontalAxis: Horizontal
-  m_VerticalAxis: Vertical
-  m_SubmitButton: Submit
-  m_CancelButton: Cancel
-  m_InputActionsPerSecond: 10
-  m_RepeatDelay: 0.5
-  m_ForceModuleActive: 0
 --- !u!1 &659930227054354549
 GameObject:
   m_ObjectHideFlags: 0
@@ -81,7 +13,7 @@ GameObject:
   - component: {fileID: 817468304959507560}
   - component: {fileID: 3134040229006995885}
   - component: {fileID: 4449725468945717664}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CompleteButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -227,7 +159,7 @@ GameObject:
   - component: {fileID: 4076452087131135672}
   - component: {fileID: 5156410914077867297}
   - component: {fileID: 4182505313346034571}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,8 +215,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -308,7 +240,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 20.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -361,7 +293,7 @@ GameObject:
   - component: {fileID: 3455560011364242011}
   - component: {fileID: 5950085131275849832}
   - component: {fileID: 7067379783948455339}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -417,8 +349,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Active Quests
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -495,7 +427,7 @@ GameObject:
   - component: {fileID: 1966746705672871883}
   - component: {fileID: 518285982324105838}
   - component: {fileID: 2105959172276271518}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +508,7 @@ GameObject:
   - component: {fileID: 5345543812245261495}
   - component: {fileID: 5774386193904986834}
   - component: {fileID: 631105926700816868}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -634,8 +566,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -712,7 +644,7 @@ GameObject:
   - component: {fileID: 650534714781866888}
   - component: {fileID: 4059329838984673146}
   - component: {fileID: 480566198398449007}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -768,8 +700,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quest description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -846,7 +778,7 @@ GameObject:
   - component: {fileID: 4392468500799306836}
   - component: {fileID: 3683248029094466412}
   - component: {fileID: 5495329484246163020}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Summary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -902,8 +834,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Summary:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -927,7 +859,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 16.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -980,7 +912,7 @@ GameObject:
   - component: {fileID: 8827026335289735974}
   - component: {fileID: 4944380415513284124}
   - component: {fileID: 1785275434882823673}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1060,7 +992,7 @@ GameObject:
   - component: {fileID: 1299961954686987083}
   - component: {fileID: 6348331806440431250}
   - component: {fileID: 4179182785377620752}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AcceptButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1206,7 +1138,7 @@ GameObject:
   - component: {fileID: 7237578108347323304}
   - component: {fileID: 1745950184961001831}
   - component: {fileID: 3921058920383250918}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1262,8 +1194,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1287,7 +1219,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
+  m_fontSize: 20.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1342,7 +1274,7 @@ GameObject:
   - component: {fileID: 6021053592282910403}
   - component: {fileID: 4238120012849133083}
   - component: {fileID: 2431117296449915046}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1488,7 +1420,7 @@ GameObject:
   - component: {fileID: 2389715474281494519}
   - component: {fileID: 4615898831965056455}
   - component: {fileID: 8710370573475037639}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1544,8 +1476,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: x
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1621,7 +1553,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1203317574761189853}
   - component: {fileID: 1086818934744734891}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1689,7 +1621,7 @@ GameObject:
   - component: {fileID: 552461621655356796}
   - component: {fileID: 1531159627768587249}
   - component: {fileID: 5022292754837280485}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: GiveUpButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1835,7 +1767,7 @@ GameObject:
   - component: {fileID: 786740134105773922}
   - component: {fileID: 7292930800619712782}
   - component: {fileID: 4375035848618315519}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: AvailableQuests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1912,7 +1844,7 @@ GameObject:
   - component: {fileID: 5529518854675992454}
   - component: {fileID: 7029846947721879938}
   - component: {fileID: 767148567526338275}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestLogPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1991,7 +1923,7 @@ GameObject:
   - component: {fileID: 4950363329558298318}
   - component: {fileID: 3872268363598860555}
   - component: {fileID: 5345920900111550491}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CloseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2136,7 +2068,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3049298517788564454}
   - component: {fileID: 3101915344292954813}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QbuttonSpacer2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2198,7 +2130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6359982237048461203}
   - component: {fileID: 1977820953704693618}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QbuttonSpacer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2261,7 +2193,7 @@ GameObject:
   - component: {fileID: 3448266572836180872}
   - component: {fileID: 6502698849276239799}
   - component: {fileID: 7706268404432447949}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ReceivableQuests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2338,7 +2270,7 @@ GameObject:
   - component: {fileID: 6196422323418599823}
   - component: {fileID: 5373203450475290736}
   - component: {fileID: 9136284598883408592}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2392,10 +2324,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: x
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2472,7 +2404,7 @@ GameObject:
   - component: {fileID: 4918837002708019756}
   - component: {fileID: 5225288490221327925}
   - component: {fileID: 2975588693950742825}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: ActiveQuests
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2548,7 +2480,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7454840895386411882}
   - component: {fileID: 8610483805331083884}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QbuttonSpacer1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2611,7 +2543,7 @@ GameObject:
   - component: {fileID: 8459884461804145320}
   - component: {fileID: 5655363590601623624}
   - component: {fileID: 3184783480349653783}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2669,8 +2601,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2747,7 +2679,7 @@ GameObject:
   - component: {fileID: 3242009719301133396}
   - component: {fileID: 38288208567046572}
   - component: {fileID: 9075519008111149034}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Rewards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2803,8 +2735,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Rewards:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2881,7 +2813,7 @@ GameObject:
   - component: {fileID: 2465985774012153475}
   - component: {fileID: 9180629661012864450}
   - component: {fileID: 8848616517417921835}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Rewards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2937,8 +2869,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Rewards:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3015,7 +2947,7 @@ GameObject:
   - component: {fileID: 8981603525780855488}
   - component: {fileID: 4759822293262065520}
   - component: {fileID: 7145350871614644797}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Summary
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3071,8 +3003,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Summary:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3096,7 +3028,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
+  m_fontSize: 16.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3149,7 +3081,7 @@ GameObject:
   - component: {fileID: 890870856191077456}
   - component: {fileID: 6307827860714707114}
   - component: {fileID: 4187677691262272339}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3205,8 +3137,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Available
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3283,7 +3215,7 @@ GameObject:
   - component: {fileID: 1882141821602937292}
   - component: {fileID: 1601341382779630694}
   - component: {fileID: 3744584062872187446}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3339,8 +3271,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Receivable
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3364,7 +3296,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 18.1
+  m_fontSize: 18
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -3418,7 +3350,7 @@ GameObject:
   - component: {fileID: 295818985647100819}
   - component: {fileID: 6610991880664602744}
   - component: {fileID: 1686142457770605461}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3520,7 +3452,7 @@ GameObject:
   - component: {fileID: 738726478745864708}
   - component: {fileID: 6188881872499594399}
   - component: {fileID: 6243715710941859873}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3600,7 +3532,7 @@ GameObject:
   - component: {fileID: 5426737495007969601}
   - component: {fileID: 4143032089292291891}
   - component: {fileID: 3535760534877040723}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: QuestDescription
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3656,8 +3588,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Quest description
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3734,7 +3666,7 @@ GameObject:
   - component: {fileID: 723347876413582548}
   - component: {fileID: 2673718691041459670}
   - component: {fileID: 926690819550152096}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3792,8 +3724,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
+  m_sharedMaterial: {fileID: 5409793200215909137, guid: 7c51215003053b043b3f64cf4336de04, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3869,7 +3801,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5606330901802650420}
   - component: {fileID: 1304587871696061653}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UI Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3890,7 +3822,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5474302284085622028}
-  - {fileID: 3381126096843076754}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1304587871696061653
@@ -3905,14 +3836,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1aa01213e53e34d499808ccc813e8db8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _questButtonFirst: {fileID: 0}
   questAvailable: 0
   questRunning: 0
+  questPanelActive: 0
   questPanel: {fileID: 1169990625344416929}
   questLogPanel: {fileID: 3916459683922675846}
   availableQuests: []
   activeQuests: []
   qButton: {fileID: 1110695076661616908, guid: dcdeae40128ef9b438a9fdcc8e86254f, type: 3}
   qLogButton: {fileID: 1110695076661616908, guid: dec3a79053539da42857ee2d20496fde, type: 3}
+  acceptButton: {fileID: 0}
+  giveUpButton: {fileID: 0}
+  completeButton: {fileID: 0}
   qButtonSpacer1: {fileID: 7454840895386411882}
   qButtonSpacer2: {fileID: 3049298517788564454}
   qLogButtonSpacer: {fileID: 6359982237048461203}
@@ -3922,3 +3858,6 @@ MonoBehaviour:
   questLogTitle: {fileID: 4182505313346034571}
   questLogDescription: {fileID: 480566198398449007}
   questLogSummary: {fileID: 7145350871614644797}
+  acceptButtonScript: {fileID: 0}
+  giveUpButtonScript: {fileID: 0}
+  completeButtonScript: {fileID: 0}
