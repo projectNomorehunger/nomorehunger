@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
+
 public class NPCDialogue : MonoBehaviour
 {
     public GameObject dialoguePanel;
@@ -14,7 +17,8 @@ public class NPCDialogue : MonoBehaviour
     public bool playerIsClose;
     public string quest;
 
-    public static bool talking = false;   
+    public static bool talking = false;
+    public UnityEvent finishedTalking;
 
     void Update()
     {
@@ -73,9 +77,10 @@ public class NPCDialogue : MonoBehaviour
         else
         {
             zeroText();
-            talking = false; 
+            talking = false;
             /* Open Quest Panel */
             // QuestObject.OpenQuestPanel();
+            finishedTalking.Invoke();
         }
     }
 

@@ -64,17 +64,6 @@ public class QuestObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        /*if (inTrigger && Input.GetKeyDown(KeyCode.Space))
-        {
-            if(!QuestUIManager.uiManager.questPanelActive)
-            {
-                //quest ui manager
-                QuestUIManager.uiManager.CheckQuests(this);
-                //QuestManager.questManager.QuestRequest(this);
-                questAccepted.Invoke();
-            }
-
-        }*/
         if(Input.GetKeyDown(KeyCode.H) && inTrigger) {
             OpenQuestPanel();
         }
