@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using UnityEngine.Events;
 public class QuestObject : MonoBehaviour
 {
-    public static QuestObject instance;
+    public QuestObject instance;
     [SerializeField]
     private bool inTrigger = false;
 
@@ -75,6 +75,9 @@ public class QuestObject : MonoBehaviour
             }
 
         }*/
+        if(Input.GetKeyDown(KeyCode.H) && inTrigger) {
+            OpenQuestPanel();
+        }
     }
 
     private void LateUpdate()

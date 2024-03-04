@@ -541,16 +541,84 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
-      propertyPath: questList.Array.data[0].title
-      value: Go To Mine Town
+      propertyPath: questList.Array.data[0].id
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
-      propertyPath: questList.Array.data[0].progress
+      propertyPath: questList.Array.data[1].id
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].id
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].hint
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[1].hint
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].hint
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].title
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[1].title
+      value: quest 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].title
+      value: quest 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].progress
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[1].progress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].progress
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].description
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[1].description
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].description
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].congratulation
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].questObjective
-      value: go to mine town
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[1].congratulation
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].congratulation
+      value: test
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].questObjectiveRequirement
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4132244558061120805, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: m_Name
@@ -122484,7 +122552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4135204797918478909, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: receivableQuestIDs.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4135204797918478909, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: availableQuestIDs.Array.data[0]
@@ -122707,7 +122775,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.6
+      value: 1.7
       objectReference: {fileID: 0}
     - target: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: m_LocalRotation.w
@@ -122727,11 +122795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -25.197681
+      value: -30.97
       objectReference: {fileID: 0}
     - target: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 12.28
+      value: 12.61
       objectReference: {fileID: 0}
     - target: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -122747,7 +122815,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4135204797918478909, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: receivableQuestIDs.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4135204797918478909, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: availableQuestIDs.Array.data[0]
@@ -122756,6 +122824,10 @@ PrefabInstance:
     - target: {fileID: 4135204797918478909, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: receivableQuestIDs.Array.data[0]
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135204797918478909, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
+      propertyPath: receivableQuestIDs.Array.data[1]
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5284667928429625352, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       propertyPath: m_IsActive
@@ -122773,14 +122845,17 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
       insertIndex: 0
       addedObject: {fileID: 2009008690}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8702769910522072136, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 450129141334835917}
   m_SourcePrefab: {fileID: 100100000, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
 --- !u!114 &450129141334835914 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1876233470505968028, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
   m_PrefabInstance: {fileID: 450129141334835913}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 450129141334835916}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e71a0c6f20065be4586bc383a55e55cf, type: 3}
@@ -122791,6 +122866,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4009621597347747720, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
   m_PrefabInstance: {fileID: 450129141334835913}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &450129141334835916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8702769910522072136, guid: 8fbb9cd8ff8004949beee468b8387430, type: 3}
+  m_PrefabInstance: {fileID: 450129141334835913}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &450129141334835917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450129141334835916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1920f7851020074793a33df0118abd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6207587314220739076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -122858,6 +122950,10 @@ PrefabInstance:
     - target: {fileID: 6115537598834176141, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: m_Name
       value: NPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 6115537598834176141, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6517291220565023513, guid: 8a71941bba9e5e0478aadffb80b95d95, type: 3}
       propertyPath: m_LocalPosition.x

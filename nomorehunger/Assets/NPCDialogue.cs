@@ -14,7 +14,7 @@ public class NPCDialogue : MonoBehaviour
     public bool playerIsClose;
     public string quest;
 
-    private bool talking = false;   
+    public static bool talking = false;   
 
     void Update()
     {
@@ -75,7 +75,7 @@ public class NPCDialogue : MonoBehaviour
             zeroText();
             talking = false; 
             /* Open Quest Panel */
-            QuestObject.instance.OpenQuestPanel();
+            // QuestObject.OpenQuestPanel();
         }
     }
 

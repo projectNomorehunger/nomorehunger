@@ -93,7 +93,7 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (!QuestUIManager.questLogPanelUIEnabled && !PlayerStats.isDead)
+        if (!QuestUIManager.questLogPanelUIEnabled && !PlayerStats.isDead && !QuestUIManager.uiManager.questPanelActive && !NPCDialogue.talking)
         {
             //MOVEMENT
             Vector3 movement = new Vector3(movementX, movementY, 0.0f);

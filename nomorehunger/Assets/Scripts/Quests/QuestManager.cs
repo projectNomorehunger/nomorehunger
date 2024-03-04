@@ -25,7 +25,7 @@ public class QuestManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void QuestRequest(QuestObject NPCQuestObject)
+    public void QuestRequest(QuestObject NPCQuestObject) //bug
     {
         //AVAILABLE QUEST
         if(NPCQuestObject.availableQuestIDs.Count > 0)
