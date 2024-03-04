@@ -14,11 +14,13 @@ public class NPCDialogue : MonoBehaviour
     public bool playerIsClose;
     public string quest;
 
+    private bool talking = false;   
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && playerIsClose)
+        if (Input.GetKeyDown(KeyCode.Space) && playerIsClose && talking == false && !QuestUIManager.uiManager.questPanelActive) //Start Talking
         {
-            if (dialoguePanel.activeInHierarchy)
+            /*if (dialoguePanel.activeInHierarchy)
             {
                 zeroText();
             }
@@ -27,9 +29,15 @@ public class NPCDialogue : MonoBehaviour
                 dialoguePanel.SetActive(true);
                 StartCoroutine(Typing());
                 
-            }
+            }*/
+            StartTalking();
         }
-        if(dialogueText.text == dialogue[index])
+        else if (Input.GetKeyDown(KeyCode.Space) && playerIsClose && talking == true) //Talking
+        {
+            NextLine();
+        }
+           
+        if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true); 
         }
@@ -55,10 +63,8 @@ public class NPCDialogue : MonoBehaviour
 
     public void NextLine()
     {
-
-
         contButton.SetActive(false) ;
-        if (index < dialogue.Length - 1)
+        if (index < dialogue.Length - 1) //next index
         {
             index++;
             dialogueText.text = "";
@@ -67,13 +73,8 @@ public class NPCDialogue : MonoBehaviour
         else
         {
             zeroText();
-            /*if (!QuestUIManager.uiManager.questPanelActive)
-            {
-                //quest ui manager
-                QuestUIManager.uiManager.CheckQuests(this);
-                //QuestManager.questManager.QuestRequest(this);
-                questAccepted.Invoke();
-            }*/
+            talking = false; 
+            /* Open Quest Panel */
             QuestObject.instance.OpenQuestPanel();
         }
     }
@@ -93,6 +94,20 @@ public class NPCDialogue : MonoBehaviour
         {
             playerIsClose = false;
             zeroText();
+        }
+    }
+
+    private void StartTalking()
+    {
+        if (dialoguePanel.activeInHierarchy)
+        {
+            zeroText();
+        }
+        else
+        {
+            talking = true;
+            dialoguePanel.SetActive(true);
+            StartCoroutine(Typing());
         }
     }
 }

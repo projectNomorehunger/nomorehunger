@@ -104,7 +104,7 @@ public class QuestObject : MonoBehaviour
         {
             //quest ui manager
             QuestUIManager.uiManager.CheckQuests(this);
-            //QuestManager.questManager.QuestRequest(this);
+            //QuestManager.questManager.QuestRequest(this); 
             questAccepted.Invoke();
         }
     }
