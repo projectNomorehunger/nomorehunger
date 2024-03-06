@@ -13,12 +13,14 @@ public class PlayerController : MonoBehaviour
     /* Component Variable */
     private Rigidbody2D rb;
     private Animator animator;
+    public AudioManager audioManager;
 
     /* Movement Variable */
     private float movementX;
     private float movementY;
     private Vector3 scale;
     public float speed;
+    public bool isMove = false;
 
     /* Combat System Variable */
     public Transform attackPoint;
@@ -32,12 +34,14 @@ public class PlayerController : MonoBehaviour
     public bool MenuOpenCloseInput { get; private set; }
     public bool QuestMenuOpenCloseInput { get; private set; }
     public bool GameOverInput { get; private set; }
+    public bool MoveInput { get; private set; }
 
     private PlayerInput _playerInput;
 
     private InputAction _menuOpenCloseAction;
     private InputAction _questMenuOpenCloseAction;
     private InputAction _gameOverAction;
+    private InputAction _moveAction;
 
     #region UnityWorkFlow
     private void Awake()
@@ -50,11 +54,13 @@ public class PlayerController : MonoBehaviour
         animator = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         scale = transform.localScale;
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
 
         _playerInput = GetComponent<PlayerInput>();
         _menuOpenCloseAction = _playerInput.actions["MenuOpenClose"];
         _questMenuOpenCloseAction = _playerInput.actions["QuestMenuOpenClose"];
         _gameOverAction = _playerInput.actions["GameOver"];
+        _moveAction = _playerInput.actions["Move"];
     }
     private void Start()
     {
@@ -70,6 +76,7 @@ public class PlayerController : MonoBehaviour
         MenuOpenCloseInput = _menuOpenCloseAction.WasPressedThisFrame();
         QuestMenuOpenCloseInput = _questMenuOpenCloseAction.WasPressedThisFrame();
         GameOverInput = _gameOverAction.WasPressedThisFrame();
+        MoveInput = _moveAction.WasPressedThisFrame();
 
         //ATTACK PRESS
         if (Time.time >= nextAttackTime)
@@ -98,16 +105,19 @@ public class PlayerController : MonoBehaviour
             //MOVEMENT
             Vector3 movement = new Vector3(movementX, movementY, 0.0f);
             rb.MovePosition(transform.position + movement.normalized * Time.deltaTime * speed);
+            
 
 
             //ANIMATION
             if (movementX != 0 || movementY != 0)
             {
                 animator.SetFloat("RunState", 0.5f);
+                isMove = true;
             }
             else
             {
                 animator.SetFloat("RunState", 0);
+                isMove = false;
             }
         }
             
@@ -118,7 +128,7 @@ public class PlayerController : MonoBehaviour
     #region Input
     public void OnMove(InputValue movementValue)
     {
-        if(!PauseMenu.isPause && !PlayerStats.isDead)
+        if (!PauseMenu.isPause && !PlayerStats.isDead)
         {
             Vector2 movementVector = movementValue.Get<Vector2>();
             movementX = movementVector.x;
@@ -127,8 +137,9 @@ public class PlayerController : MonoBehaviour
         else
         {
             movementX = 0;
-            movementY = 0;  
+            movementY = 0;
         }
+
         
     }
 

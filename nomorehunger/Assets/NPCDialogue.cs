@@ -24,7 +24,6 @@ public class NPCDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && playerIsClose && talking == false && !QuestUIManager.uiManager.questPanelActive) //Start Talking
         {
-            
             StartTalking();
         }
         else if (Input.GetKeyDown(KeyCode.Space) && playerIsClose && talking == true) //Talking

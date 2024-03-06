@@ -6,6 +6,7 @@ TagManager:
   tags:
   - NPC
   - enemy
+  - Audio
   layers:
   - Default
   - TransparentFX
