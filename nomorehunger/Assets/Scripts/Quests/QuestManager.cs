@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
@@ -111,6 +112,10 @@ public class QuestManager : MonoBehaviour
                 PlayerStats.instance.ENVI += currentQuestList[i].ENVIReward;
 
                 currentQuestList.Remove(currentQuestList[i]);
+                if (PlayerStats.instance.ECO == 5)
+                {
+                    SceneManager.LoadScene("cs 4");
+                }
 
             }
         }
@@ -246,6 +251,7 @@ public class QuestManager : MonoBehaviour
             }
         }
         return false;
+       
     }
 
     //SHOW QUEST LOG
