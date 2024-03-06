@@ -24,16 +24,7 @@ public class NPCDialogue : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && playerIsClose && talking == false && !QuestUIManager.uiManager.questPanelActive) //Start Talking
         {
-            /*if (dialoguePanel.activeInHierarchy)
-            {
-                zeroText();
-            }
-            else
-            {
-                dialoguePanel.SetActive(true);
-                StartCoroutine(Typing());
-                
-            }*/
+            
             StartTalking();
         }
         else if (Input.GetKeyDown(KeyCode.Space) && playerIsClose && talking == true) //Talking
@@ -41,10 +32,10 @@ public class NPCDialogue : MonoBehaviour
             NextLine();
         }
            
-        if (dialogueText.text == dialogue[index])
+        /*if (dialogueText.text == dialogue[index])
         {
             contButton.SetActive(true); 
-        }
+        }*/
 
     }
 
