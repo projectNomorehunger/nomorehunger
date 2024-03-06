@@ -10,6 +10,7 @@ public class Monster0 : MonoBehaviour
 {
     public enum EnemyState {IDLE, RUN, HURT, ATTACK, DEATH };
     private Animator _animator;
+    public AudioManager audioManager;
     private int maxHitpoints = 100;
     public int hitpoints;
     public int damage;
@@ -39,12 +40,15 @@ public class Monster0 : MonoBehaviour
         scale = transform.localScale;
         damage = 10;
         GotHit = false;
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     public void TakeDamage(int dmg)
     {
         _animator.SetBool("isRunning", false);
         _animator.SetTrigger("isHurt");
+        audioManager.PlaySFX(audioManager.attackHit);
         GotHit = true;
         hitpoints -= dmg;
   

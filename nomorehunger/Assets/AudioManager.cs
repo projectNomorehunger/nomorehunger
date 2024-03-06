@@ -9,7 +9,6 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioSource SFXSource;
     [Header("Audio Clip")]
     public AudioClip background;
-    public AudioClip walk;
     public AudioClip attack;
     public AudioClip attackHit;
     public AudioClip hurt;

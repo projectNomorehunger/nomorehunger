@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Z))
             {
+                audioManager.PlaySFX(audioManager.attack);
                 Attack();
                 nextAttackTime = Time.time + 1f / attackRate;
             }
@@ -156,6 +157,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("hit " + enemy.name);
             enemy.GetComponent<Monster0>().TakeDamage( PlayerStats.instance.damage );
+
         }
     }
 

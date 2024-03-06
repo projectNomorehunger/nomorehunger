@@ -9,6 +9,7 @@ using UnityEngine.Events;
 public class PlayerStats : MonoBehaviour
 {
     public static PlayerStats instance;
+    public AudioManager audioManager;
     //Animator animator;
     public int maxHitpoints;
     public int hitpoints;
@@ -47,6 +48,8 @@ public class PlayerStats : MonoBehaviour
         gold = 0;
         items = new List<Loot>();
         isDead = false;
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         
     }
 
@@ -64,7 +67,7 @@ public class PlayerStats : MonoBehaviour
     public void TakeDamage(int dmg)
     {
         PlayerController.instance.HurtAnimation();
-
+        audioManager.PlaySFX(audioManager.hurt);
         hitpoints = hitpoints - dmg;
         if (this.hitpoints <= 0)
         {
@@ -77,6 +80,7 @@ public class PlayerStats : MonoBehaviour
         Debug.Log("Player is Dead");
         isDead = true;
         PlayerController.instance.DeathAnimation();
+        audioManager.PlaySFX(audioManager.death);
         DeathMenu.instance.GameOver();
     }
 
