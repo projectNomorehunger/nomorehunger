@@ -42427,6 +42427,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[0].ECOReward
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].SOCReward
       value: 1
       objectReference: {fileID: 0}
