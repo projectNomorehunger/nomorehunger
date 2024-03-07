@@ -120,7 +120,7 @@ public class QuestManager : MonoBehaviour
         //check for chain quest
         CheckChainQuest(questID);
     }
-
+      
     // CHECK CHAIN QUEST
     void CheckChainQuest(int questID)
     {
