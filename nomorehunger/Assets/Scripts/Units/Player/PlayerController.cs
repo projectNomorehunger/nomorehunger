@@ -145,6 +145,7 @@ public class PlayerController : MonoBehaviour
         {
             Debug.Log("hit " + enemy.name);
             enemy.GetComponent<Monster0>().TakeDamage( PlayerStats.instance.damage );
+            
         }
     }
 
