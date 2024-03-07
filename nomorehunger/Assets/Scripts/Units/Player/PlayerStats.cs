@@ -81,7 +81,23 @@ public class PlayerStats : MonoBehaviour
         isDead = true;
         PlayerController.instance.DeathAnimation();
         audioManager.PlaySFX(audioManager.death);
-        DeathMenu.instance.GameOver();
+
+        //World Stats Decrease
+        ECO -= 1;
+        ENVI -= 1;
+        SOC -= 1;
+
+        //UI popup
+        if (ECO <= 0 || ENVI <= 0 || SOC <= 0)
+        {
+            GameEndMenu.instance.GameEnd();
+
+        }
+        else 
+        {
+            DeathMenu.instance.GameOver();
+        }
+        
     }
 
     public void Respawn()
@@ -150,6 +166,21 @@ public class PlayerStats : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ResetStats()
+    {
+        maxHitpoints = 100;
+        hitpoints = maxHitpoints;
+        damage = 30;
+        ECO = 1;
+        ENVI = 5;
+        SOC = 5;
+        gold = 0;
+        items = new List<Loot>();
+        isDead = false;
+
+        audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
     #endregion

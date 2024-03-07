@@ -111,6 +111,9 @@ public class QuestManager : MonoBehaviour
                 PlayerStats.instance.ENVI += currentQuestList[i].ENVIReward;
 
                 currentQuestList.Remove(currentQuestList[i]);
+                // CHECK WORLDSTATS METER
+                CheckWorldMeter();
+                
 
             }
         }
@@ -281,5 +284,14 @@ public class QuestManager : MonoBehaviour
             }
         }
 
+    }
+
+    public void CheckWorldMeter()
+    {
+        if (PlayerStats.instance.ECO <= 0 || PlayerStats.instance.SOC <= 0 || PlayerStats.instance.ENVI <= 0)
+        {
+            //GAME OVER
+            GameEndMenu.instance.GameEnd();
+        }
     }
 }
