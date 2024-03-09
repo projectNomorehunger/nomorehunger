@@ -61,6 +61,8 @@ public class PlayerStats : MonoBehaviour
         {
             TakeDamage(10);
         }
+
+        
         
     }
     #endregion
@@ -191,5 +193,9 @@ public class PlayerStats : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
+    public void BuffDamage()
+    {
+        damage += 20;
+    }
     #endregion
 }
