@@ -66904,6 +66904,34 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1439584842}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4116584757199915251, guid: 290d30300e5b38046bbda1ad1c803f6a, type: 3}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GetItemDropped
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayerStats, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354954135961420438, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
+      propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8038355691011283093, guid: 070ac20c14018844f9f117fd8b29aba3, type: 3}
       propertyPath: m_LocalScale.x
       value: 3

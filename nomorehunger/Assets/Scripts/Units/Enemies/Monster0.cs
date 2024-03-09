@@ -68,7 +68,7 @@ public class Monster0 : MonoBehaviour
         //disable enemy
         this.enabled = false;
         GetComponent<Collider2D>().enabled = false;
-        if (QuestManager.questManager.RequestAcceptedQuest(2) == true) //Quest id using 2
+        if (QuestManager.questManager.RequestAcceptedQuest(5) == true) //Quest id using 2
         {
             QuestManager.questManager.AddQuestItem("Defeated 1 Monster", 1);
         }
