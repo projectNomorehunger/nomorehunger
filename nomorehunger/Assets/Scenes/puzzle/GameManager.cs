@@ -40,7 +40,8 @@ public class GameManager : MonoBehaviour
             WinText.SetActive(true);
             
             QuestManager.questManager.AddQuestItem("Puzzle Solved", 1);
-            SceneManager.LoadScene("Map2");
+            //SceneManager.LoadScene("Map2");
+            SceneControlPuzzle.instance.FinishedPuzzle();
         }
     }
 

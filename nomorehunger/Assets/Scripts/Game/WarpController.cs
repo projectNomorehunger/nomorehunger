@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneControl : MonoBehaviour
+public class WarpController : MonoBehaviour
 {
     public string nextSceneName;
     private Scene scene;
