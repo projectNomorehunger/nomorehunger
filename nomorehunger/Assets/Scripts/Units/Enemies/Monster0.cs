@@ -61,7 +61,7 @@ public class Monster0 : MonoBehaviour
     {
         //UnityEngine.Debug.Log("Monster is dead");
         PlayerStats.instance.GetItemDropped();
-
+        PlayerStats.instance.BuffDamage(2);
         //die anim
         _animator.SetBool("isDead", true);
         //disable enemy

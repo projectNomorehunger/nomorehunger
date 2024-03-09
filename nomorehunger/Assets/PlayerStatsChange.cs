@@ -13,7 +13,7 @@ public class PlayerStatsChange : MonoBehaviour
     {
         if (collision.tag == "Player" && !isBuff)
         {
-            PlayerStats.instance.BuffDamage();
+            PlayerStats.instance.BuffDamage(20);
             isBuff = true;
             //Debug.Log("isbuff");
         }

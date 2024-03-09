@@ -194,9 +194,9 @@ public class PlayerStats : MonoBehaviour
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
 
-    public void BuffDamage()
+    public void BuffDamage(int dmg)
     {
-        damage += 20;
+        damage += dmg;
     }
     #endregion
 }
