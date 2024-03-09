@@ -198,5 +198,10 @@ public class PlayerStats : MonoBehaviour
     {
         damage += dmg;
     }
+
+    public void Heal()
+    {
+        hitpoints = maxHitpoints;
+    }
     #endregion
 }

@@ -42,6 +42,10 @@ public class PlayerSpawner : MonoBehaviour
         {
             SpawnPlayer(new Vector3(13, 51, 0));
         }
+        else if(from == "Puzzle Scene" && to == "Map2")
+        {
+            SpawnPlayer(new Vector3(-50, 16, 0));
+        }
         else
         {
 
