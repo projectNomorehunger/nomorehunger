@@ -294,6 +294,7 @@ public class QuestManager : MonoBehaviour
         if (PlayerStats.instance.ECO <= 0 || PlayerStats.instance.SOC <= 0 || PlayerStats.instance.ENVI <= 0)
         {
             //GAME OVER
+            PlayerStats.isOver = true;
             GameEndMenu.instance.GameEnd();
         }
     }

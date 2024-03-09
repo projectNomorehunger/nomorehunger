@@ -21,6 +21,7 @@ public class PlayerStats : MonoBehaviour
     public List<Loot> items;
 
     public static bool isDead { get; set; }
+    public static bool isOver {  get; set; }
     //public UnityEvent Hurt;
 
     #region UnityWorkFlow
@@ -48,7 +49,7 @@ public class PlayerStats : MonoBehaviour
         gold = 0;
         items = new List<Loot>();
         isDead = false;
-
+        isOver = false;
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
         
     }
@@ -69,9 +70,12 @@ public class PlayerStats : MonoBehaviour
         PlayerController.instance.HurtAnimation();
         audioManager.PlaySFX(audioManager.hurt);
         hitpoints = hitpoints - dmg;
-        if (this.hitpoints <= 0)
+        if (this.hitpoints <= 0 && isDead == false)
         {
             Death();
+        }else if(this.hitpoints <= 0 && isDead == true)
+        {
+
         }
     }
 
@@ -90,12 +94,15 @@ public class PlayerStats : MonoBehaviour
         //UI popup
         if (ECO <= 0 || ENVI <= 0 || SOC <= 0)
         {
+            //Debug.Log("OVER");
+            isOver = true;
             GameEndMenu.instance.GameEnd();
 
         }
         else 
         {
             DeathMenu.instance.GameOver();
+            //Debug.Log("DEAD");
         }
         
     }
@@ -179,6 +186,7 @@ public class PlayerStats : MonoBehaviour
         gold = 0;
         items = new List<Loot>();
         isDead = false;
+        isOver = false;
 
         audioManager = GameObject.FindGameObjectWithTag("Audio").GetComponent<AudioManager>();
     }
