@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerSpawner : MonoBehaviour
 {
     public static PlayerSpawner instance;
+    [SerializeField] GameObject spawnPoint;
     private void Awake()
     {
         if (instance == null)
@@ -46,4 +47,18 @@ public class PlayerSpawner : MonoBehaviour
 
         }
     }
+
+    public void Respawn()
+    {
+        if(spawnPoint == null)
+        {
+            SpawnPlayer(new Vector3(0, 0, 0));
+        }
+        else
+        {
+            SpawnPlayer(spawnPoint.transform.position);
+        }
+        
+    }
+   
 }

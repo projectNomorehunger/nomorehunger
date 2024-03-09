@@ -25,9 +25,10 @@ public class GameEndMenu : MonoBehaviour
     
     void Update()
     {
-        if (PlayerController.instance.GameOverInput && PlayerStats.isDead)
+        if (PlayerController.instance.GameOverInput && PlayerStats.isDead && PlayerStats.isOver)
         {
             //RESPAWN
+            Debug.Log("OVER2");
             gameEndMenu.SetActive(false);
             SceneManager.LoadScene("MainMenu");
             PlayerStats.instance.ResetStats();

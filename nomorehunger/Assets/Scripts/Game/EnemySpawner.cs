@@ -19,7 +19,7 @@ public class EnemySpawner : MonoBehaviour
     private void spawnEnemy(GameObject enemy)
     {
         GameObject newEnemy = Instantiate(enemy , new Vector3 (Random.Range(-11f,12f),Random.Range(-3f,10f),0), Quaternion.identity) ;
-        Debug.Log("Enemy Spawn");
+        //Debug.Log("Enemy Spawn");
 
     }
 }

@@ -82,7 +82,7 @@ public class Monster0 : MonoBehaviour
 
         foreach (Collider2D enemy in hitEnemies)
         {
-            Debug.Log("HitPlayer");
+            //Debug.Log("HitPlayer");
             //enemy.GetComponent<PlayerStats>().TakeDamage(GetComponent<Monster0>().damage);
             PlayerStats.instance.TakeDamage(damage);
         }

@@ -28,7 +28,9 @@ public class DeathMenu : MonoBehaviour
         {
             //RESPAWN
             deathMenu.SetActive(false);
-            PlayerController.instance.Spawn(new Vector3(0, 0, 0));
+            //Debug.Log("DEAD2");
+            //PlayerController.instance.Spawn(new Vector3(0, 0, 0));
+            PlayerSpawner.instance.Respawn();
             PlayerStats.instance.Respawn();
         }
     }
