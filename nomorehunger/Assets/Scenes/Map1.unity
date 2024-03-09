@@ -42428,7 +42428,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].ECOReward
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].SOCReward
@@ -42447,12 +42447,36 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[2].SOCReward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[3].ECOReward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[4].ECOReward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[5].SOCReward
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].ENVIReward
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].ENVIReward
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[3].ENVIReward
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
+      propertyPath: questList.Array.data[4].ENVIReward
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: currentQuestList.Array.data[0].hint
