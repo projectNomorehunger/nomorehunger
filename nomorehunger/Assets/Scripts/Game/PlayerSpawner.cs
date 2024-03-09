@@ -36,7 +36,7 @@ public class PlayerSpawner : MonoBehaviour
         }
         else if(from == "Map3" && to == "Map2")
         {
-            SpawnPlayer(new Vector3(54, 10, 0));
+            SpawnPlayer(new Vector3(38, 7, 0));
         }
         else if(from == "Arena" && to == "Map2")
         {
