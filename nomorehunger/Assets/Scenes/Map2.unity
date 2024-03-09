@@ -257,6 +257,10 @@ PrefabInstance:
       value: HeaderB1
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
+      propertyPath: wordSpeed
+      value: 0.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: contButton
       value: 
       objectReference: {fileID: 312512103}
@@ -700,6 +704,10 @@ PrefabInstance:
     - target: {fileID: 5882738495954082554, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: m_Name
       value: VillagerB1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
+      propertyPath: wordSpeed
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: contButton
@@ -10050,6 +10058,10 @@ PrefabInstance:
     - target: {fileID: 5882738495954082554, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: m_Name
       value: VillageB2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
+      propertyPath: wordSpeed
+      value: 0.0005
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: contButton
