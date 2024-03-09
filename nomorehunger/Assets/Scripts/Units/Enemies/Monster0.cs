@@ -14,7 +14,6 @@ public class Monster0 : MonoBehaviour
     private int maxHitpoints = 100;
     public int hitpoints;
     public int damage;
-    public UnityEvent itemDropped;
     public EnemyState enemyState;
 
     //MOVING PART
@@ -60,8 +59,8 @@ public class Monster0 : MonoBehaviour
 
     private void Death()
     {
-        UnityEngine.Debug.Log("Monster is dead");
-        itemDropped.Invoke();
+        //UnityEngine.Debug.Log("Monster is dead");
+        PlayerStats.instance.GetItemDropped();
 
         //die anim
         _animator.SetBool("isDead", true);
