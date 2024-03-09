@@ -68779,9 +68779,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2303562381475572129, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 479
+      objectReference: {fileID: 0}
+    - target: {fileID: 2303562381475572129, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 413
+      objectReference: {fileID: 0}
     - target: {fileID: 2666715807110058145, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
       propertyPath: m_Name
       value: PlayerUIManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5451365326652608399, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 828.9599
+      objectReference: {fileID: 0}
+    - target: {fileID: 5451365326652608399, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 413
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365552371755437642, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 651.4199
+      objectReference: {fileID: 0}
+    - target: {fileID: 6365552371755437642, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 413
       objectReference: {fileID: 0}
     - target: {fileID: 8501212855245026372, guid: 38f184c09a20db14d98103d447f7916d, type: 3}
       propertyPath: m_Pivot.x
