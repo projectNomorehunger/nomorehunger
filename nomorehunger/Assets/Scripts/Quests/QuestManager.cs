@@ -301,7 +301,7 @@ public class QuestManager : MonoBehaviour
 
     public void CheckECO()
     {
-        if(PlayerStats.instance.ENVI >= 5)
+        if(PlayerStats.instance.SOC >= 8)
         {
             SceneManager.LoadScene("CS 4");
         }
