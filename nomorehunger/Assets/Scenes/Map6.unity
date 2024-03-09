@@ -1916,9 +1916,6 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   hitpoints: 0
   damage: 0
-  itemDropped:
-    m_PersistentCalls:
-      m_Calls: []
   enemyState: 0
   player: {fileID: 1786585962}
   speed: 2
@@ -1928,6 +1925,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   attackRate: 1
+  SceneName: EndScene
 --- !u!1 &606117773
 GameObject:
   m_ObjectHideFlags: 0

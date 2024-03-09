@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 
@@ -31,6 +32,8 @@ public class Monster0 : MonoBehaviour
 
     public float attackRate = 1f;
     float nextAttackTime = 0f;
+    public string SceneName;
+
     void Start()
     {
         enemyState = EnemyState.IDLE;
@@ -71,6 +74,7 @@ public class Monster0 : MonoBehaviour
         {
             QuestManager.questManager.AddQuestItem("Defeated 1 Monster", 1);
         }
+        SceneManager.LoadScene(SceneName);
     }
 
     private void Attack()
@@ -196,5 +200,5 @@ public class Monster0 : MonoBehaviour
         }
         Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
-
+    
 }
