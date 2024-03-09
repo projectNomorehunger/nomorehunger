@@ -12,7 +12,7 @@ public class Monster0 : MonoBehaviour
     public enum EnemyState {IDLE, RUN, HURT, ATTACK, DEATH };
     private Animator _animator;
     public AudioManager audioManager;
-    private int maxHitpoints = 100;
+    [SerializeField] public int maxHitpoints ;
     public int hitpoints;
     public int damage;
     public EnemyState enemyState;
@@ -74,7 +74,16 @@ public class Monster0 : MonoBehaviour
         {
             QuestManager.questManager.AddQuestItem("Defeated 1 Monster", 1);
         }
-        SceneManager.LoadScene(SceneName);
+
+        if (SceneName == "EndScene")
+        {
+            SceneManager.LoadScene(SceneName);
+        }
+        else
+        {
+
+        }
+        
     }
 
     private void Attack()

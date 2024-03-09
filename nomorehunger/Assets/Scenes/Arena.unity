@@ -66820,6 +66820,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1439584842}
     - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
+      propertyPath: maxHitpoints
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162780296421438745, guid: e089613e1cd10fc448888728c6a00948, type: 3}
       propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1572397358}
@@ -75212,6 +75216,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1439584842}
     - target: {fileID: 8186087424867252812, guid: 03dfebd7d3ca9b64a9b8aef625928431, type: 3}
+      propertyPath: maxHitpoints
+      value: 120
+      objectReference: {fileID: 0}
+    - target: {fileID: 8186087424867252812, guid: 03dfebd7d3ca9b64a9b8aef625928431, type: 3}
       propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1572397358}
@@ -75272,6 +75280,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1439584842}
+    - target: {fileID: 3329231915926231232, guid: 7d1bff9b178320544b7a72439aa140d0, type: 3}
+      propertyPath: maxHitpoints
+      value: 110
+      objectReference: {fileID: 0}
     - target: {fileID: 3329231915926231232, guid: 7d1bff9b178320544b7a72439aa140d0, type: 3}
       propertyPath: itemDropped.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 

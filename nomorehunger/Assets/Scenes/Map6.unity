@@ -1914,6 +1914,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioManager: {fileID: 0}
+  maxHitpoints: 200
   hitpoints: 0
   damage: 0
   enemyState: 0
