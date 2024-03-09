@@ -69006,6 +69006,10 @@ PrefabInstance:
       value: VillagerA1
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
+      propertyPath: wordSpeed
+      value: 0.0005
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: contButton
       value: 
       objectReference: {fileID: 504308556}
