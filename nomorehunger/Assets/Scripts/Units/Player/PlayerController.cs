@@ -68,7 +68,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         scale = transform.localScale;*/
 
-        speed = 10;
+        speed = 6;
     }
     void Update()
     {
