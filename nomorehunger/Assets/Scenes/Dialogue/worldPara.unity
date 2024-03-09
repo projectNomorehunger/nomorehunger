@@ -265,8 +265,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -365.7628}
-  m_SizeDelta: {x: 0.00012207, y: -731.5258}
+  m_AnchoredPosition: {x: -1.6870117, y: -402.885}
+  m_SizeDelta: {x: -37.122, y: -846.267}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441550335
 MonoBehaviour:
@@ -283,10 +283,10 @@ MonoBehaviour:
   textComponent: {fileID: 1022632875}
   lines:
   - "\u0E40\u0E19\u0E37\u0E48\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E42\u0E25\u0E01\u0E25\u0E48\u0E21\u0E2A\u0E25\u0E32\u0E22\u0E08\u0E36\u0E07\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E2A\u0E35\u0E22\u0E2A\u0E21\u0E14\u0E38\u0E25\u0E43\u0E19\u0E18\u0E23\u0E23\u0E21\u0E0A\u0E32\u0E15\u0E34\u0E2A\u0E48\u0E07\u0E1C\u0E25\u0E43\u0E2B\u0E49\u0E40\u0E01\u0E34\u0E14\u0E01\u0E32\u0E23\u0E40\u0E2A\u0E35\u0E22\u0E2A\u0E21\u0E14\u0E38\u0E25\u0E02\u0E2D\u0E07
-    Economy Environment \u0E40\u0E40\u0E25\u0E30 Socity"
-  - "Sam \u0E08\u0E36\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E2D\u0E1A\u0E01\u0E39\u0E49\u0E42\u0E25\u0E01\u0E43\u0E1A\u0E19\u0E35\u0E49\u0E42\u0E14\u0E22\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E2A\u0E21\u0E14\u0E38\u0E25\u0E02\u0E2D\u0E07\u0E42\u0E25\u0E01\u0E43\u0E1A\u0E19\u0E35\u0E49\u0E40\u0E40\u0E22\u0E48\u0E25\u0E07\u0E44\u0E1B\u0E01\u0E27\u0E48\u0E32\u0E40\u0E14\u0E34\u0E21"
+    Economy Environment \u0E40\u0E40\u0E25\u0E30 Socity                             
+    Sam \u0E08\u0E36\u0E07\u0E15\u0E49\u0E2D\u0E07\u0E0A\u0E48\u0E27\u0E22\u0E01\u0E2D\u0E1A\u0E01\u0E39\u0E49\u0E42\u0E25\u0E01\u0E43\u0E1A\u0E19\u0E35\u0E49\u0E42\u0E14\u0E22\u0E17\u0E35\u0E48\u0E15\u0E49\u0E2D\u0E07\u0E44\u0E21\u0E48\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E2A\u0E21\u0E14\u0E38\u0E25\u0E02\u0E2D\u0E07\u0E42\u0E25\u0E01\u0E43\u0E1A\u0E19\u0E35\u0E49\u0E40\u0E40\u0E22\u0E48\u0E25\u0E07\u0E44\u0E1B\u0E01\u0E27\u0E48\u0E32\u0E40\u0E14\u0E34\u0E21"
   textSpeed: 0.1
-  SceneName: 
+  SceneName: tutorial
 --- !u!114 &441550336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -422,8 +422,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000045776, y: 0.0018158}
-  m_SizeDelta: {x: 1920, y: 931.72}
+  m_AnchoredPosition: {x: 0.000045776, y: 0.0014992}
+  m_SizeDelta: {x: 1920, y: 1079.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &449110024
 MonoBehaviour:
@@ -497,8 +497,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -13.596}
-  m_SizeDelta: {x: 1920, y: 172.9996}
+  m_AnchoredPosition: {x: -9.2805, y: -13.596}
+  m_SizeDelta: {x: 1901.4, y: 173}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1022632875
 MonoBehaviour:
@@ -583,7 +583,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 33.747314, y: 0, z: 16.873657, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

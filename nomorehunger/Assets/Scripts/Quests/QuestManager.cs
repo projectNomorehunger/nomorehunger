@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
@@ -111,6 +112,8 @@ public class QuestManager : MonoBehaviour
                 PlayerStats.instance.ENVI += currentQuestList[i].ENVIReward;
 
                 currentQuestList.Remove(currentQuestList[i]);
+                //check load scene 4
+                CheckECO();
                 // CHECK WORLDSTATS METER
                 CheckWorldMeter();
                 
@@ -292,6 +295,14 @@ public class QuestManager : MonoBehaviour
         {
             //GAME OVER
             GameEndMenu.instance.GameEnd();
+        }
+    }
+
+    public void CheckECO()
+    {
+        if(PlayerStats.instance.ECO >= 5)
+        {
+            SceneManager.LoadScene("CS 4");
         }
     }
 }

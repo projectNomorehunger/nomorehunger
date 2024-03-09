@@ -328,8 +328,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002594, y: 3.1523}
-  m_SizeDelta: {x: 1920, y: 106.7413}
+  m_AnchoredPosition: {x: 10.122, y: 3.152}
+  m_SizeDelta: {x: 1899.751, y: 106.741}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &823777256
 MonoBehaviour:
@@ -467,8 +467,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.005065918, y: -373.05002}
-  m_SizeDelta: {x: -0.010132, y: -746.11}
+  m_AnchoredPosition: {x: -0.005065918, y: -410.09}
+  m_SizeDelta: {x: -0.010132, y: -820.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1001248646
 MonoBehaviour:
@@ -549,7 +549,7 @@ MonoBehaviour:
   lines:
   - "\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E1B\u0E38\u0E48\u0E21\u0E15\u0E48\u0E32\u0E07\u0E46\u0E43\u0E19\u0E40\u0E01\u0E21"
   textSpeed: 0.1
-  SceneName: 
+  SceneName: MainMenu
 --- !u!114 &1001248650
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -714,8 +714,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.010117, y: 92.802}
-  m_SizeDelta: {x: 1920, y: 746.11}
+  m_AnchoredPosition: {x: -0.0050518, y: 129.84}
+  m_SizeDelta: {x: 1920, y: 820.19}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2147338417
 MonoBehaviour:
