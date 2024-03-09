@@ -51195,7 +51195,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].hint
-      value: talk elder
+      value: "\u0E21\u0E2D\u0E19\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E07\u0E40\u0E01\u0E48\u0E32\u0E19\u0E2D\u0E01\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E17\u0E34\u0E28\u0E40\u0E2B\u0E19\u0E37\u0E2D"
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[2].hint
@@ -51203,11 +51203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[3].hint
-      value: go to warp on the left
+      value: "\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E1A\u0E49\u0E32\u0E19\u0E17\u0E35\u0E48\u0E21\u0E35\u0E1A\u0E48\u0E2D\u0E19\u0E49\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E1A\u0E49\u0E32\u0E19"
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[4].hint
-      value: go to warp on the top
+      value: "\u0E21\u0E2D\u0E19\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E07\u0E40\u0E01\u0E48\u0E32\u0E19\u0E2D\u0E01\u0E40\u0E21\u0E37\u0E2D\u0E07MineTown\u0E17\u0E32\u0E07\u0E17\u0E34\u0E28\u0E40\u0E2B\u0E19\u0E37\u0E2D"
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].hint
@@ -51346,7 +51346,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].description
-      value: talk
+      value: "\u0E04\u0E38\u0E22\u0E01\u0E31\u0E1A\u0E2B\u0E31\u0E27\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19
+        MineTown"
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: currentQuestList.Array.data[0].title
@@ -51398,7 +51399,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].questObjective
-      value: talk to header Minettown
+      value: talk to header Minetown
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: currentQuestList.Array.data[0].progress
