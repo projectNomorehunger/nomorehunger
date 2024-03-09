@@ -150,7 +150,7 @@ public class PlayerStats : MonoBehaviour
     void CheckQuestItems()
     {
         //if questActive;
-        if (QuestManager.questManager.RequestAcceptedQuest(3))
+        if (QuestManager.questManager.RequestAcceptedQuest(5))
         {
             for (int i = 0; i < items.Count; i++)
             {
@@ -166,7 +166,7 @@ public class PlayerStats : MonoBehaviour
 
     public void CheckQuestItemsAmount()
     {
-        if (QuestManager.questManager.RequestAcceptedQuest(3)) // quest 3 is item dropped
+        if (QuestManager.questManager.RequestAcceptedQuest(5)) // quest 3 is item dropped
         {
             for (int i = 0; i < items.Count; i++)
             {
