@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerStatsChange : MonoBehaviour
 {   
     public bool isBuff;
+    [SerializeField] public int dmg;
     private void Start()
     {
         isBuff = false;
@@ -13,7 +14,8 @@ public class PlayerStatsChange : MonoBehaviour
     {
         if (collision.tag == "Player" && !isBuff)
         {
-            PlayerStats.instance.BuffDamage(20);
+            PlayerStats.instance.BuffDamage(dmg);
+            PlayerStats.instance.Heal();
             isBuff = true;
             //Debug.Log("isbuff");
         }
