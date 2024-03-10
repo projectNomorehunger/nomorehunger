@@ -6,6 +6,57 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/MainMenu.unity
+    guid: 57c9600b818fab54e8fd1749e6add77d
+  - enabled: 0
+    path: Assets/Scenes/DevRoom.unity
+    guid: 8509773d2e6ee6e4f826c4ce319d6696
+  - enabled: 1
+    path: Assets/Scenes/Map1.unity
+    guid: c0ebe6b58e9d7754ca8bb5ae79da6c12
+  - enabled: 1
+    path: Assets/Scenes/Map2.unity
+    guid: c486063205bffce45b01be03fed6fbe6
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/EndScene.unity
+    guid: fab2322cb50ad7a40a68d4651bf334b4
+  - enabled: 1
+    path: Assets/Scenes/Map6.unity
+    guid: 372b866a70cafb749a72ef7320d13872
+  - enabled: 1
+    path: Assets/Scenes/Map5.unity
+    guid: 540699001020cdb4bbbbb4563fec42b9
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/worldPara.unity
+    guid: 54c8ca238ed14a2489a1d926855eb008
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/tutorial.unity
+    guid: 0049b1fc5adb206409ac78a83d471044
+  - enabled: 1
+    path: Assets/Scenes/Map3.unity
+    guid: 55745e5e29440d84bbb519f174288854
+  - enabled: 1
+    path: Assets/Scenes/Map4.unity
+    guid: 03783922f7b6a1f47840a00eecb85771
+  - enabled: 1
+    path: Assets/Scenes/Puzzle Scene.unity
+    guid: d54fe09dac176674c816ef03be9f9f12
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/cs 4.unity
+    guid: df4d48b0dbe346f46bc361cde28f03cd
+  - enabled: 1
+    path: Assets/Scenes/Arena.unity
+    guid: 8bb0b7dd1612a914794cb537d181caf5
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/CS1.unity
+    guid: 7da8b34ffb31f1f41a327285353c12cf
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/CS2.unity
+    guid: 9aa7290ec546ca14db16884bb3836dee
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/CS3.unity
+    guid: 3e53d37f28d4cc9478eaba8469e1f9bd
+  - enabled: 1
+    path: Assets/Scenes/Dialogue/CutSceneStart.unity
+    guid: ffe83ca155cb1a64eb90651f965613d0
   m_configObjects: {}
