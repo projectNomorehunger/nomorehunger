@@ -89,6 +89,10 @@ public class PlayerController : MonoBehaviour
             }
         }
 
+        if (Input.GetKeyDown(KeyCode.Y))
+        {
+            PlayerStats.instance.StatsIncrease();
+        }
         /*if (Input.GetKeyDown(KeyCode.W))
         {
             Spawn(SpawnPoint.position);

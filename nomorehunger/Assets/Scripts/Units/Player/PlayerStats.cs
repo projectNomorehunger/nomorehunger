@@ -203,5 +203,13 @@ public class PlayerStats : MonoBehaviour
     {
         hitpoints = maxHitpoints;
     }
+
+    public void StatsIncrease()
+    {
+        ECO += 1;
+        ENVI += 1;
+        SOC += 1;
+        QuestManager.questManager.CheckECO();
+    }
     #endregion
 }
