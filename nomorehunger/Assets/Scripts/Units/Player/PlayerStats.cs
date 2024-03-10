@@ -118,7 +118,7 @@ public class PlayerStats : MonoBehaviour
     public void GetItemDropped()
     {
         // items.Add(new Loot("Monster Fang", 1));
-        QuestManager.questManager.AddQuestItem("find Obj from monster", 1);
+        QuestManager.questManager.AddQuestItem("Get 1 Monster Teeth", 1);
         int index = FindItem("Monster Fang");
         if ( index != -1)
         {
