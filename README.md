@@ -1,2 +1,2 @@
-# nomorehunger
-Project game development name nomorehunger
+# Sustainable Global Rescue
+Project SDG game development name Sustainable Global Rescue.
