@@ -51191,53 +51191,51 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].hint
-      value: "\u0E40\u0E14\u0E34\u0E19\u0E44\u0E1B\u0E14\u0E49\u0E32\u0E19\u0E1A\u0E19\u0E02\u0E2D\u0E07\u0E41\u0E1C\u0E19\u0E17\u0E35\u0E48"
+      value: Walk to the top of the map.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].hint
-      value: "\u0E21\u0E2D\u0E19\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E07\u0E40\u0E01\u0E48\u0E32\u0E19\u0E2D\u0E01\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E17\u0E32\u0E07\u0E17\u0E34\u0E28\u0E40\u0E2B\u0E19\u0E37\u0E2D"
+      value: The monster is in an old mine outside of town to the north.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[2].hint
-      value: "\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E44\u0E1B\u0E2B\u0E32\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E15\u0E32\u0E21\u0E40\u0E2A\u0E49\u0E19\u0E17\u0E32\u0E07\u0E14\u0E49\u0E32\u0E19\u0E02\u0E27\u0E32"
+      value: Travel to find the city along the right path.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[3].hint
-      value: "\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E44\u0E1B\u0E22\u0E31\u0E07\u0E1A\u0E49\u0E32\u0E19\u0E17\u0E35\u0E48\u0E21\u0E35\u0E1A\u0E48\u0E2D\u0E19\u0E49\u0E33\u0E2B\u0E19\u0E49\u0E32\u0E1A\u0E49\u0E32\u0E19"
+      value: Go to the house with a well in front of the house.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[4].hint
-      value: "\u0E21\u0E2D\u0E19\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E2D\u0E22\u0E39\u0E48\u0E43\u0E19\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E07\u0E40\u0E01\u0E48\u0E32\u0E19\u0E2D\u0E01\u0E40\u0E21\u0E37\u0E2D\u0E07MineTown\u0E17\u0E32\u0E07\u0E17\u0E34\u0E28\u0E40\u0E2B\u0E19\u0E37\u0E2D"
+      value: The monster is in an old mine outside of MineTown to the north.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].hint
-      value: "\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E01\u0E25\u0E31\u0E1A\u0E44\u0E1B\u0E40\u0E21\u0E37\u0E2D\u0E07
-        Mine Town "
+      value: Return to Mine Town.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].title
-      value: "\u0E44\u0E1B\u0E40\u0E21\u0E37\u0E2D\u0E07 Mine Town"
+      value: Go to Mine Town
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].title
-      value: "\u0E17\u0E27\u0E07\u0E04\u0E37\u0E19"
+      value: Payback
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[2].title
-      value: "\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C "
+      value: Diplomacy
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[3].title
-      value: "\u0E19\u0E49\u0E33\u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E0A\u0E35\u0E27\u0E34\u0E15"
+      value: Water for Life
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[4].title
-      value: "\u0E25\u0E48\u0E32\u0E02\u0E2D\u0E07"
+      value: Find Item Drop
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].title
-      value: "\u0E01\u0E32\u0E23\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C
-        2"
+      value: Diplomacy 2
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].progress
@@ -51325,31 +51323,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].description
-      value: "\u0E15\u0E34\u0E14\u0E15\u0E48\u0E2D\u0E01\u0E31\u0E1A\u0E1C\u0E39\u0E49\u0E43\u0E2B\u0E0D\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E21\u0E37\u0E2D\u0E07
-        Mine Town"
+      value: Contact with the village elder of Mine Town.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].description
-      value: "\u0E08\u0E31\u0E14\u0E01\u0E32\u0E23\u0E21\u0E2D\u0E19\u0E2A\u0E40\u0E15\u0E2D\u0E23\u0E4C\u0E43\u0E19\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E07\u0E40\u0E01\u0E48\u0E32
-        1 \u0E15\u0E31\u0E27"
+      value: Defeat 1 monster in the old mine.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[2].description
-      value: "\u0E40\u0E14\u0E34\u0E19\u0E17\u0E32\u0E07\u0E44\u0E1B\u0E40\u0E0A\u0E37\u0E48\u0E2D\u0E21\u0E2A\u0E31\u0E21\u0E1E\u0E31\u0E19\u0E18\u0E4C\u0E17\u0E35\u0E48\u0E40\u0E21\u0E37\u0E2D\u0E07
-        Port Town"
+      value: Travel to Port town to communicate about the problem.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[3].description
-      value: "\u0E0B\u0E48\u0E2D\u0E21\u0E17\u0E48\u0E2D\u0E19\u0E49\u0E33"
+      value: Fix the pipe.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[4].description
-      value: "\u0E25\u0E48\u0E32\u0E02\u0E2D\u0E07"
+      value: Get Item by defeat monster in the old mine.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].description
-      value: "\u0E04\u0E38\u0E22\u0E01\u0E31\u0E1A\u0E2B\u0E31\u0E27\u0E2B\u0E19\u0E49\u0E32\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19
-        MineTown"
+      value: Talk to the Village Elder of MineTown.
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: currentQuestList.Array.data[0].title
@@ -51357,7 +51351,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].congratulation
-      value: "\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08!"
+      value: Mission Completed!
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[0].questObjective
@@ -51365,7 +51359,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].congratulation
-      value: "\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08!"
+      value: Mission Completed!
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[1].questObjective
@@ -51373,7 +51367,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[2].congratulation
-      value: "\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08!"
+      value: Mission Completed!
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[2].questObjective
@@ -51381,7 +51375,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[3].congratulation
-      value: "\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08!"
+      value: Mission Completed!
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[3].questObjective
@@ -51389,7 +51383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[4].congratulation
-      value: "\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08!"
+      value: Mission Completed!
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[4].questObjective
@@ -51397,7 +51391,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].congratulation
-      value: "\u0E20\u0E32\u0E23\u0E01\u0E34\u0E08\u0E2A\u0E33\u0E40\u0E23\u0E47\u0E08!"
+      value: Mission Completed!
       objectReference: {fileID: 0}
     - target: {fileID: 3321234561521244894, guid: 807312d99a806b7428039a36f154efb9, type: 3}
       propertyPath: questList.Array.data[5].questObjective
@@ -69053,8 +69047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: "\u0E17\u0E32\u0E07\u0E15\u0E2D\u0E19\u0E40\u0E2B\u0E19\u0E37\u0E2D\u0E21\u0E35\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E17\u0E35\u0E48\u0E0A\u0E37\u0E48\u0E48\u0E2D\u0E27\u0E48\u0E32
-        Mine Town \u0E2D\u0E22\u0E39\u0E48\u0E25\u0E2D\u0E07\u0E44\u0E1B\u0E15\u0E23\u0E27\u0E08\u0E2A\u0E2D\u0E1A\u0E14\u0E39\u0E2A\u0E34"
+      value: In the north there is a town called Mine Town, go check it out.
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: dialogue.Array.data[1]
