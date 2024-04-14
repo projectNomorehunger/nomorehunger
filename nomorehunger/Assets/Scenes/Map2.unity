@@ -278,9 +278,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: "\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E02\u0E2D\u0E07\u0E1E\u0E27\u0E01\u0E40\u0E23\u0E32\u0E21\u0E35\u0E1B\u0E31\u0E0D\u0E2B\u0E32\u0E01\u0E31\u0E1A\u0E40\u0E21\u0E37\u0E2D\u0E07
-        PortTown \u0E40\u0E19\u0E37\u0E48\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E40\u0E40\u0E22\u0E48\u0E07\u0E1E\u0E37\u0E49\u0E19\u0E17\u0E35\u0E48\u0E17\u0E33\u0E01\u0E32\u0E23\u0E40\u0E01\u0E29\u0E15\u0E23\u0E01\u0E31\u0E19
-        \u0E19\u0E32\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E44\u0E1B\u0E40\u0E08\u0E23\u0E08\u0E32\u0E15\u0E48\u0E2D\u0E23\u0E2D\u0E07\u0E01\u0E31\u0E1A\u0E2B\u0E31\u0E27\u0E2B\u0E19\u0E49\u0E32\u0E40\u0E21\u0E37\u0E2D\u0E07\u0E1D\u0E31\u0E48\u0E07\u0E19\u0E31\u0E49\u0E19\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E44\u0E14\u0E49\u0E44\u0E2B\u0E21"
+      value: Our town has a problem with PortTown over competing for agricultural
+        land. Could you please go and negotiate with the village chief on that side?
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: dialogue.Array.data[1]
@@ -723,15 +722,14 @@ PrefabInstance:
       objectReference: {fileID: 312512102}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: dialogue.Array.data[0]
-      value: "\u0E1E\u0E31\u0E01\u0E2B\u0E25\u0E31\u0E07\u0E21\u0E32\u0E19\u0E35\u0E49\u0E21\u0E35\u0E01\u0E25\u0E38\u0E48\u0E21
-        monster \u0E08\u0E32\u0E01\u0E40\u0E2B\u0E21\u0E37\u0E2D\u0E07\u0E40\u0E01\u0E48\u0E32\u0E17\u0E32\u0E07\u0E17\u0E34\u0E28\u0E40\u0E2B\u0E19\u0E37\u0E2D 
-        \u0E2D\u0E2D\u0E01\u0E21\u0E32\u0E02\u0E42\u0E21\u0E22\u0E02\u0E2D\u0E07\u0E08\u0E32\u0E01\u0E0A\u0E32\u0E27\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E40\u0E25\u0E30\u0E44\u0E14\u0E49\u0E17\u0E33\u0E25\u0E32\u0E22\u0E1E\u0E37\u0E0A\u0E1C\u0E25\u0E17\u0E35\u0E48\u0E0A\u0E32\u0E27\u0E1A\u0E49\u0E32\u0E19\u0E2D\u0E14\u0E17\u0E19\u0E1B\u0E25\u0E39\u0E01\u0E02\u0E36\u0E49\u0E19\u0E21\u0E32"
+      value: Recently, there have been a group of monsters from the old mine to the
+        north. They came out to steal things from the villagers and destroy the crops
+        that the villagers had patiently grown.
       objectReference: {fileID: 0}
     - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
       propertyPath: dialogue.Array.data[1]
-      value: " \u0E08\u0E19\u0E17\u0E33\u0E43\u0E2B\u0E49\u0E40\u0E14\u0E37\u0E2D\u0E14\u0E23\u0E49\u0E2D\u0E19\u0E01\u0E31\u0E19\u0E44\u0E1B\u0E2B\u0E21\u0E14
-        \u0E19\u0E32\u0E22\u0E0A\u0E48\u0E27\u0E22\u0E44\u0E1B\u0E08\u0E31\u0E14\u0E01\u0E32\u0E23
-        monsters \u0E40\u0E1E\u0E37\u0E48\u0E2D\u0E17\u0E27\u0E07\u0E04\u0E37\u0E19\u0E04\u0E27\u0E32\u0E21\u0E2A\u0E07\u0E1A\u0E2A\u0E38\u0E02\u0E43\u0E2B\u0E49\u0E2B\u0E21\u0E39\u0E48\u0E1A\u0E49\u0E32\u0E19\u0E40\u0E23\u0E32\u0E2B\u0E19\u0E48\u0E2D\u0E22\u0E2A\u0E34 "
+      value: Until causing everyone trouble Can you help me defeat the monsters to
+        restore peace to our village?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10075,6 +10073,18 @@ PrefabInstance:
       propertyPath: dialoguePanel
       value: 
       objectReference: {fileID: 312512102}
+    - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
+      propertyPath: dialogue.Array.data[0]
+      value: The Tree of life was destroyed, causing nature to be unbalanced. Our
+        village therefore lack water for use in agriculture. Our village has gathered
+        resources and has completed construction of a water pipe.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6342912507445015413, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
+      propertyPath: dialogue.Array.data[1]
+      value: But there is still a problem with connecting the pipes to each other.
+        Could you please go to the house that has a well in front of the house and
+        fix that problem for the convenience of our village?
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 2770610252963592470, guid: 996fc7427db2c9043a6aa3c96d126c83, type: 3}
