@@ -630,8 +630,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a47cb6e1d12d68b469176613a4cb5c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioManager: {fileID: 0}
   speed: 0
-  ui: {fileID: 0}
+  isMove: 0
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackRate: 2
 --- !u!50 &7524898324493793056
 Rigidbody2D:
   serializedVersion: 4
