@@ -547,7 +547,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 823777256}
   lines:
-  - "\u0E01\u0E32\u0E23\u0E43\u0E0A\u0E49\u0E1B\u0E38\u0E48\u0E21\u0E15\u0E48\u0E32\u0E07\u0E46\u0E43\u0E19\u0E40\u0E01\u0E21"
+  - How To Play
   textSpeed: 0.1
   SceneName: MainMenu
 --- !u!114 &1001248650
